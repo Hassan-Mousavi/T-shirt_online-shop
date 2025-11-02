@@ -1,36 +1,55 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
-body{
-    font-size: 2rem;
+body {
+  font-size: 2rem;
 }
-.container{
-    width: 140rem;
-    margin: 0 auto;
+.container {
+  width: 140rem;
+  margin: 0 auto;
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3rem;
-    
+.nav {
+  margin-top: 3rem;
+  border: 2px solid #222;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #227fae;
+  padding: 1rem;
 }
-.nav_search{
-    width: 50%;
-    height: 5rem;
-    padding-right: 2rem;
+.nav_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav div{
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+.nav_search {
+  width: 50%;
+  height: 5rem;
+  padding-right: 2rem;
+  border-radius: 8px;
 }
-.basket_icon,.login_icon{
-    width: 2.5rem;
-    height: 2.5rem;
+.nav_search::placeholder {
+  font-size: 2rem;
+}
+.buy_login {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.basket_icon,
+.login_icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.nav_bottom {
+  margin-top: 2.5rem;
+}
+.nav_list {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  list-style-type: none;
 }
