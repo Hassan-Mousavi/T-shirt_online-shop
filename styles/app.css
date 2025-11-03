@@ -19,6 +19,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 5px #227fae;
   padding: 1rem;
+  background-color: #0a1a2d;
 }
 .nav_top {
   display: flex;
@@ -30,9 +31,15 @@ body {
   height: 5rem;
   padding-right: 2rem;
   border-radius: 8px;
+  font-size: 2rem;
+  background-color: #007bff;
+  border: none;
+  outline: none;
 }
 .nav_search::placeholder {
+  font-weight: bold;
   font-size: 2rem;
+  color: aliceblue;
 }
 .buy_login {
   display: flex;
@@ -43,6 +50,7 @@ body {
 .login_icon {
   width: 2.5rem;
   height: 2.5rem;
+  fill: #007bff;
 }
 .nav_bottom {
   margin-top: 2.5rem;
@@ -52,4 +60,16 @@ body {
   justify-content: center;
   gap: 10rem;
   list-style-type: none;
+}
+.nav_item_link{
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: #007bff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.nav_item_link:hover{
+  background-color: #1e3a5f;
 }
