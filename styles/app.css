@@ -136,7 +136,7 @@ body {
 }
 /* section hero */
 .hero {
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 .hero_content {
   display: flex;
@@ -178,7 +178,16 @@ body {
 }
 /* section main banners */
 .banners {
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
+}
+.banners_title,
+.men_tshirt_title {
+  margin-bottom: 1.5rem;
+  padding-right: 1rem;
+  font-size: 4rem;
+  border-right: 8px solid #0a4e39;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .all_banners {
   display: flex;
@@ -233,4 +242,82 @@ body {
 .set_link:hover {
   color: #0a4e39;
   background-color: #f7f7f7;
+}
+/* section men cards */
+.men_tshirt {
+  margin-bottom: 5rem;
+}
+.men_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 27rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #bbb;
+  padding: 1.5rem;
+}
+.off_percent {
+  background-color: red;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+.off_percent svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #fff;
+}
+.off_percent span {
+  font-weight: 700;
+}
+.men_card_img {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.men_card_title,
+.men_card_price {
+  text-align: center;
+}
+.men_tshirt_cards {
+  padding: 0.5rem;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.men_card_price {
+  margin-bottom: 1rem;
+  color: #0a4e39;
+  font-weight: 700;
+}
+.men_card_off {
+  display: block;
+  text-align: center;
+  color: #bbb;
+}
+.men_card_buy {
+  display: block;
+  transition: all 0.3s ease;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid #0a4e39;
+  padding: 1rem 2rem;
+  background-color: #0a4e39;
+  color: #f7f7f7;
+  font-weight: 700;
+}
+.men_card_buy:hover {
+  background-color: #f7f7f7;
+  color: #0a4e39;
+  border: 2px solid #0a4e39;
 }
