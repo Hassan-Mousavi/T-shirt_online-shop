@@ -321,3 +321,42 @@ body {
   color: #0a4e39;
   border: 2px solid #0a4e39;
 }
+/* section tablighat */
+.tablighat {
+  margin-bottom: 5rem;
+}
+.tablighat_card {
+  width: 95%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  background-color: #0a4e39;
+  color: #f7f7f7;
+  border-radius: 8px;
+  border: 2px solid #0a4e39;
+  padding: 1rem 2rem;
+  font-weight: 700;
+}
+.tablighat_card:hover {
+  background-color: #257157;
+  border-radius: 8px;
+}
+.tablighat_title {
+  margin-bottom: 1rem;
+}
+.tablighat_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login_page {
+  transition: all 0.3s ease;
+  background-color: #c5a26f;
+  text-decoration: none;
+  color: #0a4e39;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.login_page:hover {
+  background-color: #f7f7f7;
+}
