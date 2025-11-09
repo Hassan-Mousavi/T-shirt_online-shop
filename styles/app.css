@@ -371,3 +371,38 @@ body {
 .login_page:hover {
   background-color: #f7f7f7;
 }
+/* section icons */
+.icon_card {
+  margin-bottom: 5rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+.send,.quality,.easy_buy,.phone{
+  display: flex;
+  background-color: #f7f7f7;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 15rem;
+  height: 15rem;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+}
+.send_icon,
+.quality_icon,
+.easy_icon,
+.phone_icon {
+  width: 5rem;
+  height: 5rem;
+  fill: #257157;
+}
+.send_text,.quality_text,.easy_text,.phone_text{
+  font-weight: 700;
+  color: #bbb;
+}
