@@ -8,7 +8,7 @@ html {
 }
 body {
   font-size: 2rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .container {
   width: 140rem;
@@ -422,4 +422,18 @@ body {
 .phone_text {
   font-weight: 700;
   color: #bbb;
+}
+/* section blogs */
+.blogs{
+  margin-bottom: 5rem;
+}
+.blog_card {
+  width: 27rem;
+  height: auto;
+  padding: 1rem;
+  border: 1px solid #0a4e39;
+}
+.blog_card_img{
+  height: 50%;
+  width: 100%;
 }
