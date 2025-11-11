@@ -184,7 +184,8 @@ body {
 .banners_title,
 .men_tshirt_title,
 .women_tshirt_title,
-.set_tshirt_title {
+.set_tshirt_title,
+.blog_title {
   margin-bottom: 1.5rem;
   padding-right: 1rem;
   font-size: 4rem;
@@ -424,16 +425,50 @@ body {
   color: #bbb;
 }
 /* section blogs */
-.blogs{
+.blogs {
   margin-bottom: 5rem;
+}
+.blog_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .blog_card {
   width: 27rem;
   height: auto;
   padding: 1rem;
   border: 1px solid #0a4e39;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #bbb;
 }
-.blog_card_img{
+.blog_card_img {
   height: 50%;
   width: 100%;
+  margin-bottom: 1rem;
+}
+.blog_card_title {
+  margin-bottom: 0.5rem;
+}
+.blog_card_caption {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.blog_card_link {
+  transition: all 0.3s ease;
+  display: block;
+  width: 20rem;
+  margin: 0 auto;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  color: #f7f7f7;
+  background-color: #c5a26f;
+  padding: 1rem 2rem;
+  border: 2px solid #c5a26f;
+  border-radius: 8px;
+}
+.blog_card_link:hover {
+  background-color: #f7f7f7;
+  color: #0a4e39;
+  border: 2px solid #0a4e39;
 }
