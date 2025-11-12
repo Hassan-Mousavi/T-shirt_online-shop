@@ -505,3 +505,18 @@ body {
   width: 3rem;
   height: 3rem;
 }
+
+.footer_contact_mobile_icon,
+.footer_contact_email_icon,
+.footer_contact_address_icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.instagram_icon svg,
+.telegarm_icon svg,
+.whatsapp_icon svg,
+.footer_down_icon {
+  width: 3rem;
+  height: 3rem;
+}
