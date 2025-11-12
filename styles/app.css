@@ -8,7 +8,7 @@ html {
 }
 body {
   font-size: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "b nazanin";
 }
 .container {
   width: 140rem;
@@ -27,7 +27,8 @@ body {
   align-items: center;
   height: 8rem;
 }
-.my_logo {
+.my_logo,
+.footer_mid_logo {
   width: 10rem;
   height: 10rem;
 }
@@ -216,7 +217,7 @@ body {
 .women_content,
 .set_content {
   text-align: center;
-  height: 15rem;
+  height: 18rem;
 }
 .men_title,
 .women_title,
@@ -512,11 +513,56 @@ body {
   width: 2rem;
   height: 2rem;
 }
-
+.footer_down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a4e39;
+  width: 80%;
+  margin: 0 auto 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #f7f7f7;
+}
+.footer_down_part1 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.instagram_icon{
+  fill:#e2307a;
+}
+.telegarm_icon{
+  fill: #459be6;
+}
+.whatsapp_icon{
+  fill: #32e0a9;
+}
+.footer_down_icon{
+  fill: #1081c7;
+}
+.instagram_icon,
+.telegarm_icon,
+.whatsapp_icon {
+  text-decoration: none;
+}
 .instagram_icon svg,
 .telegarm_icon svg,
 .whatsapp_icon svg,
 .footer_down_icon {
+  width: 3rem;
+  height: 3rem;
+}
+.footer_theleast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 10rem;
+  border-top: 2px dashed #f7f7f7;
+  color: #f7f7f7;
+}
+.gotop_btn {
+  cursor: pointer;
   width: 3rem;
   height: 3rem;
 }
