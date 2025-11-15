@@ -142,7 +142,6 @@ body {
 }
 .hero_content {
   display: flex;
-  align-items: center;
   background-color: #0a4e39;
   color: #f7f7f7;
   background-image: linear-gradient(90deg, #0a4e39, #257157);
@@ -193,6 +192,7 @@ body {
   border-right: 8px solid #0a4e39;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  color: #257157;
 }
 .all_banners {
   display: flex;
@@ -498,6 +498,45 @@ body {
   gap: 1rem;
   color: #f7f7f7;
 }
+.footer_mid {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: space-between;
+  align-items: center;
+  color: #f7f7f7;
+  padding: 2rem 10rem 3rem 10rem;
+}
+.footer_mid_introduce {
+  /* background-image: url(/images/footer-img.webp),#7a6a6a9e; */
+  background: rgba(37, 37, 37, 0.196);
+  box-shadow: 0 0 5px #0a4e39;
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: #f7f7f7;
+}
+.footer_mid_caption{
+  text-align: justify;
+}
+.footer_mid_lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer_mid_list1,
+.footer_mid_list2 {
+  list-style-type: none;
+}
+.footer_mid_item1:first-child,
+.footer_mid_item2:first-child {
+  margin-bottom: 1rem;
+  border-right: 3px solid #c5a26f;
+  padding-right: 0.5rem;
+}
+
+.footer_contact {
+  display: flex;
+  justify-content: space-between;
+}
 .phone_part {
   text-align: left;
 }
@@ -529,16 +568,16 @@ body {
   align-items: center;
   gap: 1.5rem;
 }
-.instagram_icon{
-  fill:#e2307a;
+.instagram_icon {
+  fill: #e2307a;
 }
-.telegarm_icon{
+.telegarm_icon {
   fill: #459be6;
 }
-.whatsapp_icon{
+.whatsapp_icon {
   fill: #32e0a9;
 }
-.footer_down_icon{
+.footer_down_icon {
   fill: #1081c7;
 }
 .instagram_icon,
