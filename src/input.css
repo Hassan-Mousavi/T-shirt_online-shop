@@ -3,10 +3,12 @@
 @theme {
   --color-primary: #0a4e39;
   --color-secondary: #257157;
+  --color-wtext: #f7f7f7;
   --color-btn: #c5a26f;
-  --color-intagram: #e2307a;
+  --color-instagram: #e2307a;
   --color-telegram: #459be6;
   --color-whatsapp: #32e0a9;
+  --color-footerbg: rgba(37, 37, 37, 0.19);
   --font-Nazanin: "Far.Nazanin";
   --font-Nazanin-Bold: "Far.Nazanin Bold";
 }
