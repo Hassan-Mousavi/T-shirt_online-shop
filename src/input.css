@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0a4e39;
-  --color-secondary: #257157;
-  --color-wtext: #f7f7f7;
   --color-btn: #c5a26f;
   --color-instagram: #e2307a;
   --color-telegram: #459be6;
@@ -12,3 +9,5 @@
   --font-Nazanin: "Far.Nazanin";
   --font-Nazanin-Bold: "Far.Nazanin Bold";
 }
+
+@custom-variant dark (&:where(.dark,.dark *));
