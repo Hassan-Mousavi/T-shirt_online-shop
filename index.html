@@ -50,7 +50,7 @@
               <span class="cursor-pointer">
                 <svg
                   id="sun"
-                  class="w-6 h-6 fill-teal-800 dark:fill-teal-500"
+                  class="w-6 h-6 fill-teal-800 dark:fill-teal-500 hidden"
                   viewBox="0 0 512 512"
                 >
                   <path
@@ -60,7 +60,7 @@
                 <!-- moon icon -->
                 <svg
                   viewBox="0 0 384 512"
-                  class="h-6 fill-teal-800 dark:fill-teal-500 hidden"
+                  class="h-6 fill-teal-800 dark:fill-teal-500"
                   id="moon"
                 >
                   <path
@@ -98,7 +98,7 @@
           <div class="rounded-lg p-2.5 bg-teal-900 dark:bg-teal-900">
             <!-- main list -->
             <ul class="flex justify-center gap-24 list-none">
-              <li class="nav_item">
+              <li>
                 <a
                   href="#"
                   class="inline-block py-2.5 px-4 transition-all bg-teal-700 dark:bg-teal-800 text-teal-50 text-xl font-bold rounded-lg hover:bg-zinc-50 hover:text-teal-900"
@@ -106,10 +106,10 @@
                 >
               </li>
 
-              <li class="nav_item">
+              <li class="group">
                 <a
                   href="#"
-                  class="flex items-center py-2.5 px-4 transition-all bg-teal-700 dark:bg-teal-800 text-teal-50 text-xl font-bold rounded-lg hover:bg-zinc-50 hover:text-teal-900"
+                  class="flex items-center relative py-2.5 px-4 transition-all bg-teal-700 dark:bg-teal-800 text-teal-50 text-xl font-bold rounded-lg hover:bg-zinc-50 hover:text-teal-900"
                   ><span>دسته بندی</span>
                   <svg
                     aria-hidden="true"
@@ -117,7 +117,7 @@
                     data-icon="chevron-down"
                     role="img"
                     viewBox="0 0 448 512"
-                    class="w-5 h-5"
+                    class="w-5 h-5 group-hover:rotate-180 group-hover:transition transition"
                   >
                     <path
                       fill="currentColor"
@@ -125,10 +125,24 @@
                       class=""
                     ></path>
                   </svg>
+                  <!-- nav bar hidden -->
+                  <ul
+                    class="w-52 absolute -right-10 top-full shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible text-center px-4 py-2.5 bg-teal-900 rounded-bl-lg rounded-br-lg child:text-teal-50 child:text-2xl child:bg-teal-800 child:rounded-lg child:space-y-4 child:mb-2.5 child:py-2.5 child-hover:bg-teal-50 child-hover:text-teal-950 transition-all"
+                  >
+                    <li>مردانه</li>
+
+                    <li>زنانه</li>
+
+                    <li>انیمیشنی</li>
+
+                    <li>متنی</li>
+
+                    <li>گل</li>
+                  </ul>
                 </a>
               </li>
 
-              <li class="nav_item">
+              <li>
                 <a
                   href="#"
                   class="inline-block py-2.5 px-4 transition-all bg-teal-700 dark:bg-teal-800 text-teal-50 text-xl font-bold rounded-lg hover:bg-zinc-50 hover:text-teal-900"
@@ -136,48 +150,20 @@
                 >
               </li>
 
-              <li class="nav_item">
+              <li>
+                <a
+                  href="#"
+                  class="inline-block py-2.5 px-4 transition-all bg-teal-700 dark:bg-teal-800 text-teal-50 text-xl font-bold rounded-lg hover:bg-zinc-50 hover:text-teal-900"
+                  >وبلاگ</a
+                >
+              </li>
+
+              <li>
                 <a
                   href="#"
                   class="inline-block py-2.5 px-4 transition-all bg-teal-700 dark:bg-teal-800 text-teal-50 text-xl font-bold rounded-lg hover:bg-zinc-50 hover:text-teal-900"
                   >درباره ما</a
                 >
-              </li>
-            </ul>
-          </div>
-          <!-- nav bar hidden -->
-          <div class="relative hidden">
-            <ul
-              class="text-center px-2.5 bg-primary rounded-bl-lg rounded-br-lg absolute right-[450px]"
-            >
-              <li
-                class="transition-all text-2xl py-2.5 px-10 bg-secondary rounded-lg text-wtext mt-2.5 hover:bg-zinc-50 hover:text-secondary"
-              >
-                مردانه
-              </li>
-
-              <li
-                class="transition-all text-2xl py-2.5 px-10 bg-secondary rounded-lg text-wtext mt-2.5 hover:bg-wtext hover:text-secondary"
-              >
-                زنانه
-              </li>
-
-              <li
-                class="transition-all text-2xl py-2.5 px-10 bg-secondary rounded-lg text-wtext mt-2.5 hover:bg-wtext hover:text-secondary"
-              >
-                انیمیشنی
-              </li>
-
-              <li
-                class="transition-all text-2xl py-2.5 px-10 bg-secondary rounded-lg text-wtext mt-2.5 hover:bg-wtext hover:text-secondary"
-              >
-                متنی
-              </li>
-
-              <li
-                class="transition-all text-2xl py-2.5 px-10 bg-secondary rounded-lg text-wtext mt-2.5 hover:bg-wtext hover:text-secondary mb-2.5"
-              >
-                گل
               </li>
             </ul>
           </div>

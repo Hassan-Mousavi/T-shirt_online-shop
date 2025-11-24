@@ -9,5 +9,7 @@
   --font-Nazanin: "Far.Nazanin";
   --font-Nazanin-Bold: "Far.Nazanin Bold";
 }
-
+/* custom variables */
 @custom-variant dark (&:where(.dark,.dark *));
+@custom-variant child (& > *);
+@custom-variant child-hover (& > *:hover);

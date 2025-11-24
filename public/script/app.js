@@ -12,3 +12,5 @@ moon.addEventListener("click", function () {
   sun.classList.remove("hidden");
   moon.classList.add("hidden");
 });
+// new acount
+
