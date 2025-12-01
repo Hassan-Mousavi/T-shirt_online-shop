@@ -1,6 +1,6 @@
 // Dark mode
-const sun = document.querySelector("#sun");
-const moon = document.querySelector("#moon");
+const sun = document.querySelector(".sun");
+const moon = document.querySelector(".moon");
 const html = document.querySelector(".html");
 const lightLogo = document.querySelector(".light-logo");
 const darkLogo = document.querySelector(".dark-logo");
