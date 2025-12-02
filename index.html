@@ -41,6 +41,25 @@
           d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
         />
       </symbol>
+      <symbol id="x-mark" viewBox="0 0 320 512">
+        <path
+          d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+        />
+      </symbol>
+      <symbol
+        id="chevron-down"
+        aria-hidden="true"
+        data-prefix="fal"
+        data-icon="chevron-down"
+        role="img"
+        viewBox="0 0 448 512"
+        fill="currentColor"
+      >
+        <path
+          d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+          class=""
+        ></path>
+      </symbol>
     </svg>
     <!-- header -->
     <header class="header">
@@ -66,7 +85,55 @@
                 />
               </a>
             </span>
-
+            <!-- mobile menu -->
+            <div
+              class="md:hidden flex flex-col fixed top-0 right-0 w-64 h-full p-2.5 bg-teal-50"
+            >
+              <svg class="w-6 h-6 text-teal-950 mr-auto mb-2.5">
+                <use href="#x-mark"></use>
+              </svg>
+              <!-- mobile menu list -->
+              <ul
+                class="flex flex-col child:text-xl space-y-4 child:bg-teal-800 child:inline-block child:py-2.5 child:px-2.5 child:rounded-lg child:text-teal-50 child:font-bold"
+              >
+                <li><a href="#">صفحه اصلی</a></li>
+                <li class="group transition-all">
+                  <div class="flex text-center justify-between w-full">
+                    <span>دسته بندی</span>
+                    <svg class="w-6 h-6">
+                      <use href="#chevron-down"></use>
+                    </svg>
+                  </div>
+                  <!-- sub mobile menu -->
+                  <div class=" bg-teal-50 group-hover:block transition-all delay-100">
+                    <ul class="mt-2.5 invisible opacity-0">
+                      <li><a href="#">انیمیشنی</a></li>
+                      <li><a href="#">گل</a></li>
+                      <li><a href="#">مردانه</a></li>
+                      <li><a href="#">زنانه</a></li>
+                      <li><a href="#">متنی</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">محصولات </a></li>
+                <li><a href="#">وبلاگ</a></li>
+                <li><a href="#">درباره ما</a></li>
+              </ul>
+              <!-- login icon & dark mode switch btn -->
+              <div class="flex gap-x-2.5 mt-auto mb-5">
+                <svg class="moon w-6 h-6 fill-teal-950">
+                  <use href="#moon"></use>
+                </svg>
+                <svg class="sun w-6 h-6 fill-teal-950 hidden">
+                  <use href="#sun"></use>
+                </svg>
+                <a href="#"
+                  ><svg class="w-6 h-6 fill-teal-950">
+                    <use href="#user"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
             <!-- search input -->
             <div
               class="w-full mx-2.5 sm:w-3/4 flex justify-center items-center rounded-lg sm:border-teal-900 shadow-teal-800 shadow md:w-1/2 h-12 dark:bg-teal-50"
@@ -96,26 +163,24 @@
               <!-- dark mode btn -->
               <span class="hidden md:block cursor-pointer">
                 <!-- sun icon -->
-                <svg
-                  class="sun w-6 h-6 fill-teal-800 dark:fill-teal-500 hidden"
-                >
+                <svg class="sun w-6 h-6 dark:fill-teal-500 hidden">
                   <use href="#sun"></use>
                 </svg>
                 <!-- moon icon -->
-                <svg class="moon h-6 w-6 fill-teal-800 dark:fill-teal-500">
+                <svg class="moon h-6 w-6 fill-teal-950 dark:fill-teal-500">
                   <use href="#moon"></use>
                 </svg>
               </span>
               <!-- basket icon -->
               <a href="#">
-                <svg class="w-6 h-6 text-teal-950 dark:fill-teal-500">
+                <svg class="w-6 h-6 text-teal-950 dark:text-teal-500">
                   <use href="#basket-icon"></use>
                 </svg>
               </a>
               <!-- login icon -->
               <span class="hidden md:block">
                 <a href="login.html" class="nav_login">
-                  <svg class="w-6 h-6 fill-teal-800 dark:fill-teal-500">
+                  <svg class="w-6 h-6 fill-teal-950 dark:fill-teal-500">
                     <use href="#user"></use>
                   </svg>
                 </a>
@@ -141,19 +206,11 @@
                   href="#"
                   class="flex items-center relative py-2.5 px-4 transition-all bg-teal-700 dark:bg-teal-800 text-teal-50 text-xl font-bold rounded-lg hover:bg-zinc-50 hover:text-teal-900"
                   ><span>دسته بندی</span>
+                  <!-- chevron down icon -->
                   <svg
-                    aria-hidden="true"
-                    data-prefix="fal"
-                    data-icon="chevron-down"
-                    role="img"
-                    viewBox="0 0 448 512"
                     class="w-5 h-5 group-hover:rotate-180 group-hover:transition transition"
                   >
-                    <path
-                      fill="currentColor"
-                      d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
-                      class=""
-                    ></path>
+                    <use href="#chevron-down"></use>
                   </svg>
                   <!-- nav bar hidden -->
                   <ul
