@@ -68,7 +68,10 @@
           class="mt-8 mb-2.5 p-2.5 rounded-lg shadow-teal-800 shadow dark:bg-teal-950"
         >
           <div class="flex items-center justify-between h-20">
-            <svg class="text-teal-950 w-6 h-6 md:hidden">
+            <!-- bars-3 icon for mobile -->
+            <svg
+              class="bars-open text-teal-950 dark:text-teal-400 w-6 h-6 md:hidden"
+            >
               <use href="#bars-3"></use>
             </svg>
             <span class="hidden md:block">
@@ -87,26 +90,31 @@
             </span>
             <!-- mobile menu -->
             <div
-              class="md:hidden flex flex-col fixed top-0 right-0 w-64 h-full p-2.5 bg-teal-50"
+              class="mobile-menu md:hidden flex flex-col fixed top-0 -right-64 w-64 h-full p-2.5 bg-teal-50 dark:bg-slate-950 transition-all z-50"
             >
-              <svg class="w-6 h-6 text-teal-950 mr-auto mb-2.5">
+              <!-- x mark for mobile -->
+              <svg
+                class="mobile-menu-x w-6 h-6 fill-teal-950 dark:fill-teal-400 mr-auto mb-2.5"
+              >
                 <use href="#x-mark"></use>
               </svg>
               <!-- mobile menu list -->
               <ul
-                class="flex flex-col child:text-xl space-y-4 child:bg-teal-800 child:inline-block child:py-2.5 child:px-2.5 child:rounded-lg child:text-teal-50 child:font-bold"
+                class="flex flex-col child:text-xl child:text-center space-y-4 dark:child:shadow dark:child:shadow-teal-500 child:bg-teal-900 child:inline-block child:py-2.5 child:px-2.5 child:rounded-lg child:text-teal-50 child:font-bold"
               >
                 <li><a href="#">صفحه اصلی</a></li>
-                <li class="group transition-all">
-                  <div class="flex text-center justify-between w-full">
+                <li class="sort-btn">
+                  <div class="flex justify-center gap-x-2 w-full">
                     <span>دسته بندی</span>
-                    <svg class="w-6 h-6">
+                    <svg class="menu-mobile-chevron w-6 h-6 rotate-180">
                       <use href="#chevron-down"></use>
                     </svg>
                   </div>
                   <!-- sub mobile menu -->
-                  <div class=" bg-teal-50 group-hover:block transition-all delay-100">
-                    <ul class="mt-2.5 invisible opacity-0">
+                  <div class="sub-menu-list hidden transition-all">
+                    <ul
+                      class="mt-2.5 child:rounded-lg child:mb-2.5 child:bg-teal-800 child:text-center child:shadow child:shadow-teal-500"
+                    >
                       <li><a href="#">انیمیشنی</a></li>
                       <li><a href="#">گل</a></li>
                       <li><a href="#">مردانه</a></li>
@@ -121,14 +129,21 @@
               </ul>
               <!-- login icon & dark mode switch btn -->
               <div class="flex gap-x-2.5 mt-auto mb-5">
-                <svg class="moon w-6 h-6 fill-teal-950">
-                  <use href="#moon"></use>
-                </svg>
-                <svg class="sun w-6 h-6 fill-teal-950 hidden">
-                  <use href="#sun"></use>
-                </svg>
+                <!-- theme switcher -->
+                <div class="toggle-theme cursor-pointer">
+                  <svg
+                    class="inline-block dark:hidden w-6 h-6 fill-teal-950 dark:fill-teal-400"
+                  >
+                    <use href="#moon"></use>
+                  </svg>
+                  <svg
+                    class="hidden dark:inline-block w-6 h-6 fill-teal-950 dark:fill-teal-400"
+                  >
+                    <use href="#sun"></use>
+                  </svg>
+                </div>
                 <a href="#"
-                  ><svg class="w-6 h-6 fill-teal-950">
+                  ><svg class="w-6 h-6 fill-teal-950 dark:fill-teal-400">
                     <use href="#user"></use>
                   </svg>
                 </a>
@@ -161,26 +176,28 @@
             <!-- bsket icon & login icon -->
             <div class="flex justify-center gap-5">
               <!-- dark mode btn -->
-              <span class="hidden md:block cursor-pointer">
-                <!-- sun icon -->
-                <svg class="sun w-6 h-6 dark:fill-teal-500 hidden">
-                  <use href="#sun"></use>
-                </svg>
-                <!-- moon icon -->
-                <svg class="moon h-6 w-6 fill-teal-950 dark:fill-teal-500">
+              <div class="toggle-theme cursor-pointer hidden md:block">
+                <svg
+                  class="inline-block dark:hidden w-6 h-6 fill-teal-950 dark:fill-teal-400"
+                >
                   <use href="#moon"></use>
                 </svg>
-              </span>
+                <svg
+                  class="hidden dark:inline-block w-6 h-6 fill-teal-950 dark:fill-teal-400"
+                >
+                  <use href="#sun"></use>
+                </svg>
+              </div>
               <!-- basket icon -->
               <a href="#">
-                <svg class="w-6 h-6 text-teal-950 dark:text-teal-500">
+                <svg class="w-6 h-6 text-teal-950 dark:text-teal-400">
                   <use href="#basket-icon"></use>
                 </svg>
               </a>
               <!-- login icon -->
               <span class="hidden md:block">
                 <a href="login.html" class="nav_login">
-                  <svg class="w-6 h-6 fill-teal-950 dark:fill-teal-500">
+                  <svg class="w-6 h-6 fill-teal-950 dark:fill-teal-400">
                     <use href="#user"></use>
                   </svg>
                 </a>
