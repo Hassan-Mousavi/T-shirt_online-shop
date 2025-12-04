@@ -6,7 +6,7 @@
     <title>Basket Page</title>
     <link rel="stylesheet" href="./public/styles/output.css" />
   </head>
-  <body>
+  <body class="font-Nazanin bg-zinc-50 dark:bg-slate-950">
     <!-- svgs -->
     <svg class="hidden">
       <symbol viewBox="0 0 384 512" id="moon">
@@ -64,12 +64,12 @@
                 <img
                   src="./public/images/new logo.png"
                   alt="logo"
-                  class="light-logo w-20 h-20"
+                  class="block dark:hidden w-20 h-20"
                 />
                 <img
                   src="./public/images/darklogo.png"
                   alt="logo"
-                  class="hidden dark-logo w-20 h-20"
+                  class="hidden dark:block w-20 h-20"
                 />
               </a>
             </span>
@@ -195,7 +195,7 @@
           >
             <!-- main list -->
             <ul
-              class="lg:gap-x-24 md:gap-x-5 md:justify-around  child:text-sm md:text-xl flex lg:justify-center list-none"
+              class="lg:gap-x-24 md:gap-x-5 md:justify-around child:text-sm md:text-xl flex lg:justify-center list-none"
             >
               <li>
                 <a
@@ -261,5 +261,6 @@
         </nav>
       </div>
     </header>
+    <script src="./public/script/app.js"></script>
   </body>
 </html>

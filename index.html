@@ -79,12 +79,12 @@
                 <img
                   src="./public/images/new logo.png"
                   alt="logo"
-                  class="light-logo w-20 h-20"
+                  class="block dark:hidden w-20 h-20"
                 />
                 <img
                   src="./public/images/darklogo.png"
                   alt="logo"
-                  class="hidden dark-logo w-20 h-20"
+                  class="hidden dark:block w-20 h-20"
                 />
               </a>
             </span>
@@ -104,9 +104,9 @@
               >
                 <li><a href="#">صفحه اصلی</a></li>
                 <li class="sort-btn">
-                  <div class="flex justify-center gap-x-2 w-full">
+                  <div class="flex justify-center items-center gap-x-2 w-full">
                     <span>دسته بندی</span>
-                    <svg class="menu-mobile-chevron w-6 h-6 rotate-180">
+                    <svg class="menu-mobile-chevron w-5 h-5 rotate-180">
                       <use href="#chevron-down"></use>
                     </svg>
                   </div>
@@ -142,6 +142,7 @@
                     <use href="#sun"></use>
                   </svg>
                 </div>
+                <!-- user icon -->
                 <a href="#"
                   ><svg class="w-6 h-6 fill-teal-950 dark:fill-teal-400">
                     <use href="#user"></use>
@@ -169,7 +170,7 @@
               </label>
               <input
                 type="search"
-                class="w-full pr-5 text-2xl font-bold border-hidden outline-hidden text-teal-950"
+                class="w-full pr-5 sm:text-2xl text-xs font-bold border-hidden outline-hidden text-teal-950"
                 placeholder="در اینجا جستوجو کنید..."
               />
             </div>
@@ -276,10 +277,11 @@
     </header>
     <!-- hero section -->
     <section class="mb-20">
-      <div class="w-7xl mx-auto">
+      <div class="xl:w-7xl lg:w-5xl w-full mx-auto">
         <div
           class="flex text-zinc-50 bg-linear-90 from-teal-950 to-teal-800 dark:bg-linear-90 dark:from-teal-950 dark:to-teal-800 rounded-lg overflow-hidden"
         >
+          <!-- hero image -->
           <div class="hero_image">
             <img
               src="./public/images/my-hero.png"
@@ -287,24 +289,28 @@
               class="h-full w-full"
             />
           </div>
+          <!-- hero content -->
           <div class="text-justify py-12 px-16">
-            <h1 class="text-7xl mb-7 text-teal-100">
+            <h1 class="xl:text-7xl lg:text-5xl md:w-xl mb-7 text-teal-100">
               حس شیک بودن را با ما تجربه کنید
             </h1>
-            <p class="text-xl mb-9 text-teal-50">
+            <p class="md:text-xl lg:w-xs xl:w-full mb-9 text-teal-50">
               فروشگاه راز تلاش میکند که حس با کیفیت و در کنار آن لاکچری بودن را
               به شما هدیه کند.
             </p>
-            <a
-              href="#"
-              class="transition-all py-2.5 px-5 bg-btn rounded-lg text-teal-50 text-xl font-bold hover:bg-teal-50 hover:text-teal-950 ml-2"
-              >بیشتر بدانید</a
-            >
-            <a
-              href="#"
-              class="transition-all py-2.5 px-5 bg-btn rounded-lg text-teal-50 text-xl font-bold hover:bg-teal-50 hover:text-teal-950"
-              >تماس با ما</a
-            >
+            <!-- hero btns -->
+            <div class="flex items-center lg:justify-end xl:justify-start">
+              <a
+                href="#"
+                class="transition-all xl:py-2.5 md:py-1.5 px-5 bg-btn rounded-lg text-teal-50 text-xl font-bold hover:bg-teal-50 hover:text-teal-950 ml-2"
+                >بیشتر بدانید</a
+              >
+              <a
+                href="#"
+                class="transition-all xl:py-2.5 md:py-1.5 px-5 bg-btn rounded-lg text-teal-50 text-xl font-bold hover:bg-teal-50 hover:text-teal-950"
+                >تماس با ما</a
+              >
+            </div>
           </div>
         </div>
       </div>
