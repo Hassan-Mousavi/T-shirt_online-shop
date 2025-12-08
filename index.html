@@ -60,6 +60,11 @@
           class=""
         ></path>
       </symbol>
+      <symbol id="footer_phone" viewBox="0 0 512 512">
+        <path
+          d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"
+        />
+      </symbol>
     </svg>
     <!-- header -->
     <header class="header">
@@ -90,7 +95,7 @@
             </span>
             <!-- mobile menu -->
             <div
-              class="mobile-menu md:hidden flex flex-col fixed top-0 -right-64 w-64 h-full p-2.5 bg-teal-50 dark:bg-slate-950 transition-all z-50"
+              class="mobile-menu md:hidden flex flex-col fixed top-0 -right-64 w-64 h-full p-2.5 bg-teal-50 dark:bg-slate-950 transition-all z-50 overflow-y-scroll"
             >
               <!-- x mark for mobile -->
               <svg
@@ -1028,7 +1033,7 @@
     <section class="mb-20">
       <div class="xl:w-7xl lg:w-5xl w-full mx-auto">
         <div
-          class="grid grid-cols-2 sm:grid-cols-3 gap-y-5 md:flex justify-between items-center w-[95%] mx-auto "
+          class="grid grid-cols-2 sm:grid-cols-3 gap-y-5 md:flex justify-between items-center w-[95%] mx-auto"
         >
           <div
             class="flex justify-around items-center flex-col w-24 h-24 md:w-40 md:h-40 mx-auto border-2 border-teal-50 dark:border-teal-500 rounded-lg shadow-teal-800 shadow dark:shadow-lg"
@@ -1410,13 +1415,15 @@
     </section>
     <!-- blog cards section -->
     <section class="mb-20">
-      <div class="w-7xl mx-auto">
+      <div class="xl:w-7xl lg:w-5xl w-full mx-auto">
         <h2
           class="mb-4 pr-2.5 text-4xl border-r-8 border-teal-800 dark:border-teal-500 rounded-tr-lg rounded-br-lg text-teal-800 dark:text-teal-500"
         >
           وبلاگ
         </h2>
-        <div class="flex justify-between items-center">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:flex gap-y-6 justify-between items-center child:mx-auto xl:child:mx-0"
+        >
           <div
             class="w-72 h-auto p-3.5 rounded-lg dark:shadow-lg dark:shadow-teal-800 shadow shadow-teal-800 -bg-linear-180 from-teal-800 to-teal-950"
           >
@@ -1509,38 +1516,38 @@
     </section>
     <!-- footer -->
     <footer class="mb-12 text-xl">
-      <div class="w-7xl mx-auto">
+      <div class="xl:w-7xl lg:w-5xl w-full mx-auto">
         <div class="rounded-lg bg-teal-950">
           <!-- footer top -->
           <div
-            class="flex justify-between items-center py-7 px-24 bg-teal-900 rounded-tr-lg rounded-tl-lg"
+            class="flex flex-col justify-between items-center space-y-2 py-3 md:py-7 px-8 md:px-24 bg-teal-900 rounded-tr-lg rounded-tl-lg"
           >
             <div class="text-teal-50">
               <h3 class="footer_top_title">آماده خدمات رسانی به شما عزیزان</h3>
               <p class="footer_top_caption">همین حالا با ما در ارتباط باشید</p>
             </div>
-            <div class="flex items-center gap-2.5 text-wtext">
+            <span class="w-full h-0.5 bg-teal-50"></span>
+            <div class="flex items-center gap-2.5 text-teal-50">
               <div class="text-left">
                 <h3 class="phone_number">09058534501</h3>
                 <p class="phone_time">ساعات کاری بین 8 صبح الی 5 بعدازظهر</p>
               </div>
-              <svg class="fill-wtext w-7 h-7" viewBox="0 0 512 512">
-                <path
-                  d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"
-                />
+              <!-- phone icon for footer -->
+              <svg class="fill-teal-50 w-7 h-7">
+                <use href="#footer_phone"></use>
               </svg>
             </div>
           </div>
           <!-- footer mid -->
           <div
-            class="grid grid-cols-3 justify-between items-center text-teal-50 pt-5 px-24 pb-7"
+            class="grid grid-cols-1 md:grid-cols-3 justify-between items-center space-y-5 text-teal-50 pt-5 px-8 md:px-24 pb-7"
           >
             <div
               class="bg-teal-900 shadow shadow-teal-800 text-teal-50 p-3.5 rounded-lg"
             >
               <a
                 href="#"
-                class="flex items-center flex-row-reverse justify-center gap-x-5"
+                class="flex flex-col-reverse items-center md:flex-row-reverse justify-center gap-x-5"
               >
                 <h2 class="text-5xl">تیشرت راز</h2>
                 <img
@@ -1555,7 +1562,7 @@
               </p>
             </div>
             <!-- footer lists -->
-            <div class="flex items-center justify-evenly">
+            <div class="flex items-center justify-between md:justify-evenly">
               <ul class="space-y-2">
                 <li class="mb-2.5 border-r-4 border-btn pr-1.5">دسترسی سریع</li>
                 <li class="footer_mid_item1">صفحه اصلی</li>
@@ -1598,11 +1605,11 @@
                   </svg>
                 </p>
               </div>
-              <div class="flex justify-between">
-                <p class="footer_contact_emailTitle">ایمیل مجموعه</p>
+              <div class="flex justify-between flex-wrap">
+                <p class="footer_contact_emailTitle">ایمیل</p>
                 <p class="flex items-center">
                   hassanmousavi496@gmail.com
-                  <svg class="w-5 h-5 fill-wtext" viewBox="0 0 512 512">
+                  <svg class="w-5 h-5 fill-teal-50" viewBox="0 0 512 512">
                     <path
                       d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
                     />
@@ -1613,7 +1620,7 @@
                 <p class="footer_contact_addressTitle">آدرس</p>
                 <p class="flex items-center">
                   تهران_اسلامشهر_کوچه5_پلاک10
-                  <svg class="w-5 h-5 fill-wtext" viewBox="0 0 512 512">
+                  <svg class="w-5 h-5 fill-teal-50" viewBox="0 0 512 512">
                     <path
                       d="M256 0c17.7 0 32 14.3 32 32V66.7C368.4 80.1 431.9 143.6 445.3 224H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H445.3C431.9 368.4 368.4 431.9 288 445.3V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V445.3C143.6 431.9 80.1 368.4 66.7 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H66.7C80.1 143.6 143.6 80.1 224 66.7V32c0-17.7 14.3-32 32-32zM128 256c0 70.7 57.3 128 128 128s128-57.3 128-128s-57.3-128-128-128s-128 57.3-128 128zm128 80c-44.2 0-80-35.8-80-80s35.8-80 80-80s80 35.8 80 80s-35.8 80-80 80z"
                     />
@@ -1621,7 +1628,7 @@
                 </p>
               </div>
               <!-- enamads -->
-              <div class="flex gap-2.5 items-center">
+              <div class="flex gap-2.5 items-center justify-between">
                 <img
                   class="w-20 h-20"
                   src="./public/images/e-namad.png"
@@ -1653,7 +1660,7 @@
                   d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm179.3 160h-67.2c-6.7-36.5-17.5-68.8-31.2-94.7 42.9 19 77.7 52.7 98.4 94.7zM248 56c18.6 0 48.6 41.2 63.2 112H184.8C199.4 97.2 229.4 56 248 56zM48 256c0-13.7 1.4-27.1 4-40h77.7c-1 13.1-1.7 26.3-1.7 40s.7 26.9 1.7 40H52c-2.6-12.9-4-26.3-4-40zm20.7 88h67.2c6.7 36.5 17.5 68.8 31.2 94.7-42.9-19-77.7-52.7-98.4-94.7zm67.2-176H68.7c20.7-42 55.5-75.7 98.4-94.7-13.7 25.9-24.5 58.2-31.2 94.7zM248 456c-18.6 0-48.6-41.2-63.2-112h126.5c-14.7 70.8-44.7 112-63.3 112zm70.1-160H177.9c-1.1-12.8-1.9-26-1.9-40s.8-27.2 1.9-40h140.3c1.1 12.8 1.9 26 1.9 40s-.9 27.2-2 40zm10.8 142.7c13.7-25.9 24.4-58.2 31.2-94.7h67.2c-20.7 42-55.5 75.7-98.4 94.7zM366.3 296c1-13.1 1.7-26.3 1.7-40s-.7-26.9-1.7-40H444c2.6 12.9 4 26.3 4 40s-1.4 27.1-4 40h-77.7z"
                 ></path>
               </svg>
-              <h2 class="text-xl">ما را دنبال کنید</h2>
+              <h2 class="text-base md:text-xl">ما را دنبال کنید</h2>
             </div>
             <div class="flex items-center gap-2.5">
               <!-- instagram icon -->
@@ -1687,14 +1694,14 @@
           </div>
           <!-- footer the least -->
           <div
-            class="flex justify-between items-center py-6 px-24 border-t-2 border-dashed border-wtext text-wtext"
+            class="flex justify-between items-center py-6 px-8 md:px-24 border-t-2 border-dashed border-teal-50 text-teal-50"
           >
-            <p class="footer_theleast_copyright">
+            <p class="footer_theleast_copyright md:text-xl text-base">
               تمامی حقوق برای فروشگاه آنلاین راز محفوظ میباشد.
             </p>
             <button class="footer_theleast_btn animate-bounce">
               <svg
-                class="w-7 h-7 cursor-pointer fill-primary shadow shadow-primary rounded-lg bg-wtext p-1.5"
+                class="w-7 h-7 cursor-pointer fill-teal-50 shadow shadow-primary rounded-lg bg-wtext p-1.5"
                 viewBox="0 0 320 512"
               >
                 <path
