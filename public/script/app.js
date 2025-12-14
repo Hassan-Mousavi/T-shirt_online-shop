@@ -32,3 +32,23 @@ menuOpen.addEventListener("click", function () {
   mobileMenu.classList.add("right-0");
   mobileMenu.classList.remove("-right-64");
 });
+// ////////////////////////////////////////////////////////////////
+// products page
+const filterBtn = document.querySelectorAll(".filter-btn");
+const filterList = document.querySelector(".filter-list");
+const sideChevron = document.querySelector(".side-chevron");
+const btn = function () {
+  addEventListener("click", function () {
+    filterList.classList.toggle("max-h-72");
+    sideChevron.classList.toggle("rotate-180");
+  });
+};
+filterBtn.forEach((btns) => {
+  btns.addEventListener("click", btn);
+});
+// forEach(() => {
+//   filterBtn.addEventListener("click", function () {
+//     filterList.classList.toggle("max-h-72");
+//     sideChevron.classList.toggle("rotate-180");
+//   });
+// });

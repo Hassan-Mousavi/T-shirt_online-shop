@@ -304,7 +304,7 @@
         <!-- side filter -->
         <div class="grid grid-cols-5 h-screen">
           <!-- filter part -->
-          <div class="flex flex-col items-center p-2.5 text-teal-950 shadow">
+          <div class="items-center p-2.5 text-teal-950 shadow shadow-teal-950">
             <!-- filter p1 -->
             <div class="flex items-center justify-between w-full">
               <div class="flex items-center gap-x-2.5">
@@ -320,15 +320,21 @@
             <!-- filter p2 -->
             <div class="w-full">
               <!-- filter lists -->
-              <ul class="text-xl">
-                <li class="flex items-center relative gap-x-2.5">
+              <ul class="text-xl space-y-5">
+                <li
+                  class="filter-btn flex justify-between items-center w-full relative gap-x-1 text-2xl cursor-pointer"
+                >
                   گروه بندی
-                  <svg class="w-5 h-5">
+                  <svg class="w-5 h-5 side-chevron transition-all">
                     <use href="#chevron-down"></use>
                   </svg>
                   <!-- filter list1 -->
-                  <div class="absolute top-full right-0 w-28">
-                    <ul class="flex flex-col child:inline-block">
+                  <div
+                    class="filter-list absolute top-full right-0 overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-all duration-300 ease-in-out"
+                  >
+                    <ul
+                      class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                    >
                       <li>انیمه</li>
                       <li>گل</li>
                       <li>ساده</li>
@@ -337,9 +343,73 @@
                     </ul>
                   </div>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li
+                  class="filter-btn flex justify-between items-center w-full relative gap-x-1 text-2xl cursor-pointer"
+                >
+                  گروه بندی
+                  <svg class="w-5 h-5 side-chevron transition-all">
+                    <use href="#chevron-down"></use>
+                  </svg>
+                  <!-- filter list1 -->
+                  <div
+                    class="filter-list absolute top-full right-0 overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-all duration-300 ease-in-out"
+                  >
+                    <ul
+                      class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                    >
+                      <li>انیمه</li>
+                      <li>گل</li>
+                      <li>ساده</li>
+                      <li>طرح دار</li>
+                      <li>معمولی</li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="filter-btn flex justify-between items-center w-full relative gap-x-1 text-2xl cursor-pointer"
+                >
+                  گروه بندی
+                  <svg class="w-5 h-5 side-chevron transition-all">
+                    <use href="#chevron-down"></use>
+                  </svg>
+                  <!-- filter list1 -->
+                  <div
+                    class="filter-list absolute top-full right-0 overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-all duration-300 ease-in-out"
+                  >
+                    <ul
+                      class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                    >
+                      <li>انیمه</li>
+                      <li>گل</li>
+                      <li>ساده</li>
+                      <li>طرح دار</li>
+                      <li>معمولی</li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="filter-btn flex justify-between items-center w-full relative gap-x-1 text-2xl cursor-pointer"
+                >
+                  گروه بندی
+                  <svg class="w-5 h-5 side-chevron transition-all">
+                    <use href="#chevron-down"></use>
+                  </svg>
+                  <!-- filter list1 -->
+                  <div
+                    class="filter-list absolute top-full right-0 overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-all duration-300 ease-in-out"
+                  >
+                    <ul
+                      class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                    >
+                      <li>انیمه</li>
+                      <li>گل</li>
+                      <li>ساده</li>
+                      <li>طرح دار</li>
+                      <li>معمولی</li>
+                    </ul>
+                  </div>
+                </li>
+
               </ul>
             </div>
           </div>
