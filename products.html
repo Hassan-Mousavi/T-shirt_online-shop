@@ -304,7 +304,9 @@
         <!-- side filter -->
         <div class="grid grid-cols-5 h-screen">
           <!-- filter part -->
-          <div class="items-center p-2.5 text-teal-950 shadow shadow-teal-950">
+          <div
+            class="items-center p-2.5 h-screen overflow-y-auto text-teal-950 shadow shadow-teal-950"
+          >
             <!-- filter p1 -->
             <div class="flex items-center justify-between w-full">
               <div class="flex items-center gap-x-2.5">
@@ -320,20 +322,23 @@
             <!-- filter p2 -->
             <div class="w-full">
               <!-- filter lists -->
-              <ul class="text-xl space-y-5">
-                <li
-                  class="filter-btn flex justify-between items-center w-full relative gap-x-1 text-2xl cursor-pointer"
-                >
-                  گروه بندی
-                  <svg class="w-5 h-5 side-chevron transition-all">
-                    <use href="#chevron-down"></use>
-                  </svg>
+              <ul class="text-xl space-y-1 mt-5">
+                <!-- item 1 -->
+                <li class="space-y-0.5">
+                  <div
+                    class="filter-btn flex justify-between items-center gap-x-1 text-2xl cursor-pointer"
+                  >
+                    گروه بندی
+                    <svg class="w-5 h-5 side-chevron transition-transform">
+                      <use href="#chevron-down"></use>
+                    </svg>
+                  </div>
                   <!-- filter list1 -->
                   <div
-                    class="filter-list absolute top-full right-0 overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-all duration-300 ease-in-out"
+                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in-out"
                   >
                     <ul
-                      class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                      class="flex flex-wrap justify-center items-center gap-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
                     >
                       <li>انیمه</li>
                       <li>گل</li>
@@ -343,73 +348,78 @@
                     </ul>
                   </div>
                 </li>
-                <li
-                  class="filter-btn flex justify-between items-center w-full relative gap-x-1 text-2xl cursor-pointer"
-                >
-                  گروه بندی
-                  <svg class="w-5 h-5 side-chevron transition-all">
-                    <use href="#chevron-down"></use>
-                  </svg>
+                <!-- item 2 -->
+                <li class="space-y-0.5">
+                  <div
+                    class="filter-btn flex justify-between items-center gap-x-1 text-2xl cursor-pointer"
+                  >
+                    سایز بندی
+                    <svg class="w-5 h-5 side-chevron transition-transform">
+                      <use href="#chevron-down"></use>
+                    </svg>
+                  </div>
                   <!-- filter list1 -->
                   <div
-                    class="filter-list absolute top-full right-0 overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-all duration-300 ease-in-out"
+                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in-out"
                   >
                     <ul
                       class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
                     >
-                      <li>انیمه</li>
-                      <li>گل</li>
-                      <li>ساده</li>
-                      <li>طرح دار</li>
-                      <li>معمولی</li>
+                      <li>Large</li>
+                      <li>X-Large</li>
+                      <li>2X-Large</li>
                     </ul>
                   </div>
                 </li>
-                <li
-                  class="filter-btn flex justify-between items-center w-full relative gap-x-1 text-2xl cursor-pointer"
-                >
-                  گروه بندی
-                  <svg class="w-5 h-5 side-chevron transition-all">
-                    <use href="#chevron-down"></use>
-                  </svg>
+                <!-- item 3 -->
+                <li class="space-y-0.5">
+                  <div
+                    class="filter-btn flex justify-between items-center gap-x-1 text-2xl cursor-pointer"
+                  >
+                    رنگ بندی
+                    <svg class="w-5 h-5 side-chevron transition-transform">
+                      <use href="#chevron-down"></use>
+                    </svg>
+                  </div>
                   <!-- filter list1 -->
                   <div
-                    class="filter-list absolute top-full right-0 overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-all duration-300 ease-in-out"
+                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in-out"
+                  >
+                    <ul
+                      class="flex flex-wrap justify-center items-center gap-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                    >
+                      <li>سیاه</li>
+                      <li>سفید</li>
+                      <li>سبز</li>
+                      <li>آبی</li>
+                      <li>طوسی</li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- item 4 -->
+                <li class="space-y-0.5">
+                  <div
+                    class="filter-btn flex justify-between items-center gap-x-1 text-2xl cursor-pointer"
+                  >
+                    قیمت
+                    <svg class="w-5 h-5 side-chevron transition-transform">
+                      <use href="#chevron-down"></use>
+                    </svg>
+                  </div>
+                  <!-- filter list1 -->
+                  <div
+                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in-out"
                   >
                     <ul
                       class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
                     >
-                      <li>انیمه</li>
-                      <li>گل</li>
-                      <li>ساده</li>
-                      <li>طرح دار</li>
-                      <li>معمولی</li>
+                      <li>تخفیف دار</li>
+                      <li>ارزان ترین</li>
+                      <li>گران ترین</li>
+                      <li>اقتصادی</li>
                     </ul>
                   </div>
                 </li>
-                <li
-                  class="filter-btn flex justify-between items-center w-full relative gap-x-1 text-2xl cursor-pointer"
-                >
-                  گروه بندی
-                  <svg class="w-5 h-5 side-chevron transition-all">
-                    <use href="#chevron-down"></use>
-                  </svg>
-                  <!-- filter list1 -->
-                  <div
-                    class="filter-list absolute top-full right-0 overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-all duration-300 ease-in-out"
-                  >
-                    <ul
-                      class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
-                    >
-                      <li>انیمه</li>
-                      <li>گل</li>
-                      <li>ساده</li>
-                      <li>طرح دار</li>
-                      <li>معمولی</li>
-                    </ul>
-                  </div>
-                </li>
-
               </ul>
             </div>
           </div>

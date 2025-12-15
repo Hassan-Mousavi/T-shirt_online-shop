@@ -35,20 +35,12 @@ menuOpen.addEventListener("click", function () {
 // ////////////////////////////////////////////////////////////////
 // products page
 const filterBtn = document.querySelectorAll(".filter-btn");
-const filterList = document.querySelector(".filter-list");
-const sideChevron = document.querySelector(".side-chevron");
-const btn = function () {
-  addEventListener("click", function () {
-    filterList.classList.toggle("max-h-72");
-    sideChevron.classList.toggle("rotate-180");
-  });
-};
 filterBtn.forEach((btns) => {
-  btns.addEventListener("click", btn);
+  btns.addEventListener("click", function () {
+    const list = btns.nextElementSibling;
+    const chevron = btns.querySelector(".side-chevron");
+
+    list.classList.toggle("max-h-96");
+    chevron.classList.toggle("rotate-180");
+  });
 });
-// forEach(() => {
-//   filterBtn.addEventListener("click", function () {
-//     filterList.classList.toggle("max-h-72");
-//     sideChevron.classList.toggle("rotate-180");
-//   });
-// });
