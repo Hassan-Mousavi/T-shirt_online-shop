@@ -300,15 +300,15 @@
       </div>
     </header>
     <main>
-      <div class="w-full lg:w-5xl xl:w-7xl mx-auto">
+      <div class="w-full lg:w-5xl xl:w-7xl mx-auto my-6">
         <!-- side filter -->
         <div class="grid grid-cols-5 h-screen">
           <!-- filter part -->
           <div
-            class="items-center p-2.5 h-screen overflow-y-auto text-teal-950 shadow shadow-teal-950"
+            class="items-center p-2.5 h-screen overflow-y-auto text-teal-950 rounded-lg shadow shadow-slate-400 dark:bg-slate-900"
           >
             <!-- filter p1 -->
-            <div class="flex items-center justify-between w-full">
+            <div class="flex items-center justify-between w-full dark:text-teal-50">
               <div class="flex items-center gap-x-2.5">
                 <h2 class="text-3xl">فیلتر</h2>
                 <svg class="w-5 h-5">
@@ -322,7 +322,7 @@
             <!-- filter p2 -->
             <div class="w-full">
               <!-- filter lists -->
-              <ul class="text-xl space-y-1 mt-5">
+              <ul class="text-xl space-y-1 mt-5 dark:text-teal-50">
                 <!-- item 1 -->
                 <li class="space-y-0.5">
                   <div
@@ -333,9 +333,9 @@
                       <use href="#chevron-down"></use>
                     </svg>
                   </div>
-                  <!-- filter list1 -->
+                  <!-- filter list 1 -->
                   <div
-                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in-out"
+                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in"
                   >
                     <ul
                       class="flex flex-wrap justify-center items-center gap-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
@@ -358,9 +358,9 @@
                       <use href="#chevron-down"></use>
                     </svg>
                   </div>
-                  <!-- filter list1 -->
+                  <!-- filter list 2 -->
                   <div
-                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in-out"
+                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in"
                   >
                     <ul
                       class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
@@ -381,9 +381,9 @@
                       <use href="#chevron-down"></use>
                     </svg>
                   </div>
-                  <!-- filter list1 -->
+                  <!-- filter list 3 -->
                   <div
-                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in-out"
+                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in"
                   >
                     <ul
                       class="flex flex-wrap justify-center items-center gap-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
@@ -406,9 +406,9 @@
                       <use href="#chevron-down"></use>
                     </svg>
                   </div>
-                  <!-- filter list1 -->
+                  <!-- filter list 4 -->
                   <div
-                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in-out"
+                    class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in"
                   >
                     <ul
                       class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
@@ -421,6 +421,462 @@
                   </div>
                 </li>
               </ul>
+            </div>
+          </div>
+          <!-- products Part -->
+          <div
+            class="grid grid-cols-3 gap-4 col-end-2 col-start-6 h-screen overflow-y-auto p-2"
+          >
+            <!-- products cards -->
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
+            </div>
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
+            </div>
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
+            </div>
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
+            </div>
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
+            </div>
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
+            </div>
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
+            </div>
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
+            </div>
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
+            </div>
+            <div
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+            >
+              <!-- <div
+              class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 fill-white"
+                aria-hidden="true"
+                data-prefix="far"
+                data-icon="percent"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M96 224c53 0 96-43 96-96s-43-96-96-96S0 75 0 128s43 96 96 96zm0-144c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm192 208c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm93.9-381.2L57.2 475c-2.3 3.1-5.9 5-9.7 5H12c-9.6 0-15.3-10.7-10-18.7L327.2 37c2.3-3.1 5.9-5 9.7-5H372c9.6 0 15.3 10.8 9.9 18.8z"
+                ></path>
+              </svg>
+              <span class="font-bold text-xl">25</span>
+            </div> -->
+              <img
+                src="/public/images/card1.png"
+                alt="tshirt picture"
+                class="w-full h-64 md:w-full md:h-auto bg-zinc-100 dark:bg-slate-400/80"
+              />
+              <h3
+                class="text-center text-xl font-bold text-teal-950 dark:text-teal-50"
+              >
+                تیشرت ساده مشکی
+              </h3>
+              <!-- <del class="block text-center text-slate-400 text-xl"
+              >800هزار تومان</del
+            > -->
+              <p
+                class="text-center mb-2.5 text-teal-800 dark:text-teal-500 text-xl font-bold"
+              >
+                800هزار تومان
+              </p>
+              <a
+                href="#"
+                class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+                >افزودن به سبد خرید</a
+              >
             </div>
           </div>
         </div>

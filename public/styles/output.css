@@ -49,6 +49,8 @@
     --text-7xl--line-height: 1;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-bounce: bounce 1s infinite;
     --default-transition-duration: 150ms;
@@ -250,6 +252,24 @@
   .z-50 {
     z-index: 50;
   }
+  .col-auto {
+    grid-column: auto;
+  }
+  .col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  .col-start-6 {
+    grid-column-start: 6;
+  }
+  .col-end-2 {
+    grid-column-end: 2;
+  }
+  .col-end-6 {
+    grid-column-end: 6;
+  }
+  .row-end-6 {
+    grid-row-end: 6;
+  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -262,8 +282,11 @@
   .my-0 {
     margin-block: calc(var(--spacing) * 0);
   }
-  .mt-0 {
-    margin-top: calc(var(--spacing) * 0);
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -394,14 +417,8 @@
   .max-h-0 {
     max-height: calc(var(--spacing) * 0);
   }
-  .max-h-72 {
-    max-height: calc(var(--spacing) * 72);
-  }
   .max-h-96 {
     max-height: calc(var(--spacing) * 96);
-  }
-  .min-h-96 {
-    min-height: calc(var(--spacing) * 96);
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -499,6 +516,12 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -543,6 +566,9 @@
   }
   .gap-3\.5 {
     gap: calc(var(--spacing) * 3.5);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -1013,9 +1039,21 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .duration-400 {
+    --tw-duration: 400ms;
+    transition-duration: 400ms;
+  }
+  .ease-in {
+    --tw-ease: var(--ease-in);
+    transition-timing-function: var(--ease-in);
+  }
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
   }
   .group-hover\:visible {
     &:is(:where(.group):hover *) {
