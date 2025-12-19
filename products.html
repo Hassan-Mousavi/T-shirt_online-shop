@@ -256,7 +256,7 @@
                   </svg>
                   <!-- nav bar hidden -->
                   <ul
-                    class="w-52 absolute -right-10 top-full shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible text-center px-4 py-2.5 bg-teal-900 rounded-bl-lg rounded-br-lg child:text-teal-50 child:text-2xl child:bg-teal-800 child:rounded-lg child:space-y-4 child:mb-2.5 child:py-2.5 child-hover:bg-teal-50 child-hover:text-teal-950 transition-all"
+                    class="w-52 absolute -right-10 top-full shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible text-center px-4 py-2.5 bg-teal-900 rounded-bl-lg rounded-br-lg child:text-teal-50 child:text-2xl child:bg-teal-800 child:rounded-lg child:space-y-4 child:mb-2.5 child:py-2.5 child-hover:bg-teal-50 child-hover:text-teal-950 transition-all z-50"
                   >
                     <li>مردانه</li>
 
@@ -302,13 +302,13 @@
     <main>
       <div class="w-full lg:w-5xl xl:w-7xl mx-auto my-6">
         <!-- side filter -->
-        <div class="grid grid-cols-5 h-screen">
+        <div class="lg:grid lg:grid-cols-5 md:flex md:flex-col h-screen">
           <!-- filter part -->
           <div
-            class="items-center p-2.5 h-screen overflow-y-auto text-teal-950 rounded-lg shadow shadow-slate-400 dark:bg-slate-900"
+            class=" justify-center items-center p-2.5 mb-2.5 md:h-52 lg:h-screen overflow-y-auto text-teal-950 rounded-lg shadow shadow-slate-400 dark:bg-slate-900"
           >
             <!-- filter p1 -->
-            <div class="flex items-center justify-between w-full dark:text-teal-50">
+            <div class="flex items-center justify-between  w-full dark:text-teal-50">
               <div class="flex items-center gap-x-2.5">
                 <h2 class="text-3xl">فیلتر</h2>
                 <svg class="w-5 h-5">
@@ -322,11 +322,11 @@
             <!-- filter p2 -->
             <div class="w-full">
               <!-- filter lists -->
-              <ul class="text-xl space-y-1 mt-5 dark:text-teal-50">
+              <ul class=" md:flex md:justify-around lg:flex-col text-xl space-y-1 mt-5 dark:text-teal-50">
                 <!-- item 1 -->
                 <li class="space-y-0.5">
                   <div
-                    class="filter-btn flex justify-between items-center gap-x-1 text-2xl cursor-pointer"
+                    class="filter-btn flex justify-between md:justify-start items-center gap-x-1 text-2xl cursor-pointer"
                   >
                     گروه بندی
                     <svg class="w-5 h-5 side-chevron transition-transform">
@@ -338,7 +338,7 @@
                     class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in"
                   >
                     <ul
-                      class="flex flex-wrap justify-center items-center gap-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                      class="flex flex-wrap md:flex-col justify-center items-center gap-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
                     >
                       <li>انیمه</li>
                       <li>گل</li>
@@ -351,7 +351,7 @@
                 <!-- item 2 -->
                 <li class="space-y-0.5">
                   <div
-                    class="filter-btn flex justify-between items-center gap-x-1 text-2xl cursor-pointer"
+                    class="filter-btn flex justify-between md:justify-start items-center gap-x-1 text-2xl cursor-pointer"
                   >
                     سایز بندی
                     <svg class="w-5 h-5 side-chevron transition-transform">
@@ -363,7 +363,7 @@
                     class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in"
                   >
                     <ul
-                      class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                      class="flex md:flex-col flex-wrap justify-center items-center gap-x-2.5 gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
                     >
                       <li>Large</li>
                       <li>X-Large</li>
@@ -374,7 +374,7 @@
                 <!-- item 3 -->
                 <li class="space-y-0.5">
                   <div
-                    class="filter-btn flex justify-between items-center gap-x-1 text-2xl cursor-pointer"
+                    class="filter-btn flex justify-between md:justify-start items-center gap-x-1 text-2xl cursor-pointer"
                   >
                     رنگ بندی
                     <svg class="w-5 h-5 side-chevron transition-transform">
@@ -386,7 +386,7 @@
                     class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in"
                   >
                     <ul
-                      class="flex flex-wrap justify-center items-center gap-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                      class="flex flex-wrap justify-center md:flex-col items-center gap-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
                     >
                       <li>سیاه</li>
                       <li>سفید</li>
@@ -399,7 +399,7 @@
                 <!-- item 4 -->
                 <li class="space-y-0.5">
                   <div
-                    class="filter-btn flex justify-between items-center gap-x-1 text-2xl cursor-pointer"
+                    class="filter-btn flex justify-between md:justify-start items-center gap-x-1 text-2xl cursor-pointer"
                   >
                     قیمت
                     <svg class="w-5 h-5 side-chevron transition-transform">
@@ -411,7 +411,7 @@
                     class="filter-list overflow-hidden max-h-0 w-full mt-2.5 bg-teal-900 rounded-lg transition-[max-height] duration-300 ease-in"
                   >
                     <ul
-                      class="flex flex-col justify-center items-center gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
+                      class="flex md:flex-col flex-wrap justify-center items-center gap-x-2.5 gap-y-2.5 p-2.5 text-teal-50 child:cursor-pointer shadow child:px-5 child:py-1.5 child:bg-teal-700 child:hover:bg-teal-50 child-hover:text-teal-950 child:rounded-lg child:transition-colors"
                     >
                       <li>تخفیف دار</li>
                       <li>ارزان ترین</li>
@@ -425,11 +425,11 @@
           </div>
           <!-- products Part -->
           <div
-            class="grid grid-cols-3 gap-4 col-end-2 col-start-6 h-screen overflow-y-auto p-2"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 col-end-2 col-start-6  h-[488px] md:h-screen overflow-y-auto p-2"
           >
             <!-- products cards -->
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg::min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
@@ -474,7 +474,7 @@
               >
             </div>
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
@@ -519,7 +519,7 @@
               >
             </div>
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
@@ -564,7 +564,7 @@
               >
             </div>
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
@@ -609,7 +609,7 @@
               >
             </div>
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
@@ -654,7 +654,7 @@
               >
             </div>
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
@@ -699,7 +699,7 @@
               >
             </div>
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
@@ -744,7 +744,7 @@
               >
             </div>
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
@@ -789,7 +789,7 @@
               >
             </div>
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
@@ -834,7 +834,7 @@
               >
             </div>
             <div
-              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] md:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
+              class="flex flex-col justify-between items-center relative sm:w-60 sm:h-[410px] lg:min-w-64 md:h-auto mx-auto rounded-lg shadow-slate-400 shadow p-3.5 dark:bg-slate-900"
             >
               <!-- <div
               class="flex flex-row-reverse items-center gap-1.5 absolute top-6 left-6 bg-red-600 text-white rounded-lg"
