@@ -13,3 +13,10 @@
 @custom-variant dark (&:where(.dark,.dark *));
 @custom-variant child (& > *);
 @custom-variant child-hover (& > *:hover);
+
+@layer components {
+  .basket_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}

@@ -229,6 +229,9 @@
   .top-6 {
     top: calc(var(--spacing) * 6);
   }
+  .top-\[213px\] {
+    top: 213px;
+  }
   .top-full {
     top: 100%;
   }
@@ -240,6 +243,9 @@
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
+  }
+  .right-\[30px\] {
+    right: 30px;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -355,9 +361,6 @@
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
-  .h-3\/4 {
-    height: calc(3/4 * 100%);
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -402,9 +405,6 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-3\/4 {
-    width: calc(3/4 * 100%);
   }
   .w-4\/5 {
     width: calc(4/5 * 100%);
@@ -655,6 +655,9 @@
   .border-teal-900 {
     border-color: var(--color-teal-900);
   }
+  .border-teal-950 {
+    border-color: var(--color-teal-950);
+  }
   .bg-btn {
     background-color: var(--color-btn);
   }
@@ -709,6 +712,10 @@
   }
   .from-teal-950 {
     --tw-gradient-from: var(--color-teal-950);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-teal-700 {
+    --tw-gradient-to: var(--color-teal-700);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-teal-800 {
@@ -1660,6 +1667,17 @@
       border-radius: var(--radius-lg);
     }
   }
+  .child\:border {
+    & > * {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .child\:border-teal-950 {
+    & > * {
+      border-color: var(--color-teal-950);
+    }
+  }
   .child\:bg-teal-700 {
     & > * {
       background-color: var(--color-teal-700);
@@ -1787,6 +1805,12 @@
     & > *:hover {
       color: var(--color-teal-950);
     }
+  }
+}
+@layer components {
+  .basket_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
 }
 @property --tw-translate-x {
