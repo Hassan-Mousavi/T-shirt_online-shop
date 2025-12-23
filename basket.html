@@ -300,24 +300,24 @@
         <!-- basket part -->
         <div class="basket_content py-2.5">
           <!-- product content/part right -->
-          <div class="w-full h-full">
-            <h2>تیشرت طرح دار،کد 001</h2>
-            <p>شناسه محصول: 001</p>
-            <p>جنس محصول: تیشرت دو نخ</p>
+          <div class="w-full h-full space-y-5">
+            <h2 class="text-4xl">تیشرت طرح دار،کد 001</h2>
+            <p class="text-3xl">شناسه محصول: 001</p>
+            <p class="text-2xl"><b>جنس محصول:</b> تیشرت دو نخ</p>
             <!-- size -->
             <div>
-              <p>انتخاب سایز:</p>
+              <p class="text-2xl font-bold">انتخاب سایز:</p>
 
-              <div>
-                <button type="submit">Large</button>
-                <button type="submit">X-Large</button>
-                <button type="submit">2X-Large</button>
+              <div class="inline-block child:bg-teal-800 text-teal-50 child:px-1 child:py-1.5 child:rounded-lg child:mr-2 ">
+                <button type="submit" class="text-2xl">Large</button>
+                <button type="submit" class="text-2xl">X-Large</button>
+                <button type="submit" class="text-2xl">2X-Large</button>
               </div>
             </div>
             <!-- color -->
             <div>
-              <p>انتخاب رنگ:</p>
-              <div>
+              <p class="text-2xl font-bold">انتخاب رنگ:</p>
+              <div class="flex items-center gap-x-6 child:text-2xl child:bg-teal-800 child:text-teal-50 child:px-1.5 child:py-1 child:rounded-lg">
                 <button type="submit">سبز</button>
                 <button type="submit">سفید</button>
                 <button type="submit">مشکی</button>
@@ -325,22 +325,33 @@
                 <button type="submit">صورتی</button>
               </div>
             </div>
-            <p><span>2 </span>عدد از این محصول باقی مانده است.</p>
-            <p>قیمت:750،000 تومان</p>
-            <!-- number of products -->
-            <div>
-              <span>تعداد:</span>
-              <input
-                type="number"
-                value="1"
-                min="0"
-                max="500"
-                class="border text-center"
-              />
+            <p class="text-2xl">
+              <span><b>2 </b></span>عدد از این محصول باقی مانده است.
+            </p>
+            <!-- pardkht part -->
+            <div class="flex items-center gap-x-3">
+              <!-- number of products -->
+              <div class="child:text-2xl">
+                <span>تعداد:</span>
+                <input
+                  type="number"
+                  value="1"
+                  min="0"
+                  max="500"
+                  class="border text-center"
+                />
+              </div>
+              <p class="text-2xl font-bold">قیمت:750،000 تومان</p>
+
+              <!-- buy button -->
+              <a
+                href="#"
+                class="text-2xl text-teal-50 font-bold bg-teal-800 px-1.5 py-1 rounded-lg"
+                >پرداخت هزینه</a
+              >
             </div>
-            <!-- buy button -->
-            <a href="#">پرداخت هزینه</a>
-            <div>
+
+            <div class="flex items-center gap-x-2.5 text-2xl">
               <svg class="w-5 h-5">
                 <use href="#heart-icon"></use>
               </svg>
