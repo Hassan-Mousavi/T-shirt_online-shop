@@ -15,6 +15,9 @@
 @custom-variant child-hover (& > *:hover);
 
 @layer components {
+  * {
+    user-select: none;
+  }
   .basket_content {
     display: grid;
     grid-template-columns: 2fr 1fr;
