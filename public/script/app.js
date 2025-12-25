@@ -67,6 +67,14 @@ function nextPic() {
 chevronRight.addEventListener("click", nextPic);
 // add to favoriates part
 const heartIcon = document.querySelector(".heart_icon");
-heartIcon.addEventListener("click",function(){
-  
-})
+heartIcon.addEventListener("click", function () {
+  heartIcon.classList.toggle("fill-red-500");
+  heartIcon.classList.toggle("fill-white");
+  heartIcon.classList.toggle("stroke-black");
+});
+// number of product part
+let price = 750000;
+let numProduct = document.querySelector(".number_product");
+let productPrice = document.querySelector(".product_price");
+let total = numProduct.value * productPrice.value;
+
