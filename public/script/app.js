@@ -73,8 +73,14 @@ heartIcon.addEventListener("click", function () {
   heartIcon.classList.toggle("stroke-black");
 });
 // number of product part
-let price = 750000;
-let numProduct = document.querySelector(".number_product");
-let productPrice = document.querySelector(".product_price");
-let total = numProduct.value * productPrice.value;
+let pricePerItem = 750000;
+function updatePrice() {
+  let count = document.getElementById("count").value;
 
+  if (count < 1 || count === "") {
+    count = 1;
+    document.getElementById("count").value = 1;
+  }
+  let total = count * pricePerItem;
+  document.getElementById("product_price").innerText = total.toLocaleString();
+}

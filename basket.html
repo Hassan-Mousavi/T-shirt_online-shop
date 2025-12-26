@@ -317,7 +317,7 @@
         <!-- basket part -->
         <div class="basket_content py-2.5">
           <!-- product content/part right -->
-          <div class="w-full h-full space-y-5 dark:text-teal-50">
+          <div class="w-full h-full space-y-4 dark:text-teal-50">
             <h2 class="text-4xl">تیشرت طرح دار،کد 001</h2>
             <p class="text-3xl">شناسه محصول: 001</p>
             <p class="text-2xl"><b>جنس محصول:</b> تیشرت دو نخ</p>
@@ -374,19 +374,13 @@
                   value="1"
                   min="1"
                   max="500"
-                  class="number_product border text-center"
+                  id="count"
+                  class="border text-center"
+                  oninput="updatePrice()"
                 />
               </div>
               <span class="text-2xl">قیمت:</span>
-              <p class="text-2xl font-bold">
-                <input
-                  value="750,000"
-                  type="text"
-                  min="6"
-                  maxlength="8"
-                  class="product_price"
-                />
-              </p>
+              <!-- off percent icon -->
               <span
                 class="flex items-center justify-center gap-x-1 text-xl font-bold text-teal-50 bg-red-500 rounded-lg px-1 py-0.5"
               >
@@ -395,12 +389,12 @@
                 </svg>
                 0
               </span>
+              <p class="text-2xl font-bold">
+                <span id="product_price">750,000</span>
+                تومان
+              </p>
+
               <!-- buy button -->
-              <a
-                href="#"
-                class="text-2xl text-teal-50 font-bold bg-teal-800 px-1.5 py-1 rounded-lg hover:bg-teal-50 hover:text-teal-950 border border-teal-900 transition-colors"
-                >پرداخت هزینه</a
-              >
             </div>
 
             <div class="flex items-center gap-x-2.5 text-2xl">
@@ -410,6 +404,11 @@
                 <use href="#heart-icon"></use>
               </svg>
               <span>افزودن به لیست علاقه مندی ها</span>
+              <a
+                href="#"
+                class="text-2xl text-teal-50 font-bold bg-teal-800 px-1.5 py-1 rounded-lg hover:bg-teal-50 hover:text-teal-950 border border-teal-900 transition-colors"
+                >پرداخت هزینه</a
+              >
             </div>
           </div>
           <!-- images part/part left -->
