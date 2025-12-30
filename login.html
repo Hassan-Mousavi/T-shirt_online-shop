@@ -6,20 +6,21 @@
     <title>Raz Login page</title>
     <link rel="stylesheet" href="./public/styles/output.css" />
   </head>
-  <body>
+  <body class="h-screen flex items-center justify-center">
     <form
-      class="flex items-center justify-center h-auto w-[600px] mx-auto rounded-lg translate-y-36 shadow-2xl bg-linear-180 from-teal-950 to-teal-800"
+      class="flex items-center justify-center h-auto w-[600px] mx-auto rounded-lg shadow-2xl bg-linear-180 from-teal-950 to-teal-800"
     >
       <div
-        class="flex items-center justify-between  text-teal-50 transition-all"
+        class="flex items-center justify-between  text-teal-50 transition-all "
       >
-        <div class="login_content w-1/2 p-5 text-xl transition-all">
+        <!-- login part -->
+        <div class="login_content w-3/4 p-5 text-xl transition-all ">
           <h2 class="text-2xl text-center mb-2.5">ورود کاربر</h2>
           <p class="mb-2.5">ایمیل</p>
           <input
             type="email"
             placeholder="لطفا ایمیل خود را وارد کنید"
-            class="bg-teal-50 w-full mb-5 py-1.5 pr-2.5 text-teal-950 rounded-lg"
+            class="bg-teal-50 w-full mb-5 py-1.5 pr-2.5 text-teal-950 rounded-lg "
           />
           <div class="flex justify-between">
             <p class="mb-2.5">رمز عبور</p>
@@ -41,10 +42,10 @@
           </button>
           <div>
             <p>هنوز ثبت نام نکردی؟</p>
-            <p class="new_acount cursor-pointer text-teal-500">ایجاد حساب</p>
+            <p class="new_acount cursor-pointer text-teal-500 inline-block">ایجاد حساب</p>
           </div>
         </div>
-
+        <!-- sign up part -->
         <div class="sign_in w-1/2 p-5 text-xl transition-all hidden">
           <h2 class="text-2xl text-center mb-2.5">ثبت نام حساب کاربری</h2>
           <p class="mb-2.5">ایمیل</p>
@@ -78,10 +79,10 @@
           </button>
           <div>
             <p>حساب کاربری دارم</p>
-            <p class="go_login cursor-pointer text-teal-500">ورود به حساب</p>
+            <p class="go_login cursor-pointer text-teal-500 inline-block">ورود به حساب</p>
           </div>
         </div>
-
+        <!-- login image -->
         <div class="login_img w-1/2 h-full transition-all">
           <img
             src="./public/images/login-pic.jpg"
