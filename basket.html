@@ -762,30 +762,42 @@
             >
               دیدگاه و نظرات
             </h2>
-            <p>دیدگاه خود را بنویسید.</p>
-            <h2>دیدگاه</h2>
+            <p class="text-2xl text-teal-950">دیدگاه خود را بنویسید.</p>
+            <h2 class="text-xl text-teal-950 font-bold">دیدگاه</h2>
             <textarea
-              class="text-xl text-teal-950 pr-2.5 border outline-0"
+              class="text-xl text-teal-950 pr-2.5 py-2.5 border outline-0 resize-none"
               name=""
               id=""
               cols="100"
               rows="10"
             ></textarea>
             <!-- comment inputs -->
-            <div>
+            <div class="flex items-center gap-x-16 mb-2.5">
               <!-- comment name  -->
               <div>
-                <label for="">نام</label>
-                <input class="border-2 border-teal-800" type="text" required />
+                <label class="text-xl text-teal-950 font-bold" for=""
+                  >نام</label
+                >
+                <input
+                  class="border-2 border-teal-800 w-80 text-xl pr-2.5"
+                  type="text"
+                  required
+                />
               </div>
               <!-- comment email  -->
               <div>
-                <label for="">ایمیل</label>
-                <input class="border-2 border-teal-800" type="email" required />
+                <label class="text-xl text-teal-950 font-bold" for=""
+                  >ایمیل</label
+                >
+                <input
+                  class="border-2 border-teal-800 w-80 text-xl pr-2.5"
+                  type="email"
+                  required
+                />
               </div>
             </div>
             <!-- save name and email for comment again -->
-            <div>
+            <div class="text-xl text-teal-950 font-bold flex items-center gap-x-2.5 mb-3">
               <input type="checkbox" />
               <span
                 >ذخیره نام،ایمیل من در مرورگر برای زمانی که دوباره دیدگاهی
@@ -793,7 +805,12 @@
               >
             </div>
 
-            <button type="submit">فرستادن دیدگاه</button>
+            <button
+              class="text-xl text-teal-50 font-bold bg-teal-800 py-1 px-1.5 rounded-lg border-2 border-teal-950 cursor-pointer hover:bg-teal-50 hover:text-teal-950 transition-colors"
+              type="submit"
+            >
+              فرستادن دیدگاه
+            </button>
           </div>
         </div>
       </div>

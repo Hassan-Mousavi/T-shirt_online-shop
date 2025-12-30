@@ -333,6 +333,9 @@
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -474,6 +477,9 @@
   .w-72 {
     width: calc(var(--spacing) * 72);
   }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
   .w-\[95\%\] {
     width: 95%;
   }
@@ -515,6 +521,9 @@
   }
   .resize {
     resize: both;
+  }
+  .resize-none {
+    resize: none;
   }
   .list-none {
     list-style-type: none;
@@ -638,6 +647,15 @@
   }
   .gap-x-6 {
     column-gap: calc(var(--spacing) * 6);
+  }
+  .gap-x-12 {
+    column-gap: calc(var(--spacing) * 12);
+  }
+  .gap-x-14 {
+    column-gap: calc(var(--spacing) * 14);
+  }
+  .gap-x-16 {
+    column-gap: calc(var(--spacing) * 16);
   }
   .gap-y-2 {
     row-gap: calc(var(--spacing) * 2);
@@ -897,6 +915,12 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-2\.5 {
+    padding-top: calc(var(--spacing) * 2.5);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
@@ -1075,6 +1099,12 @@
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
   }
+  .text-shadow-teal-950 {
+    --tw-text-shadow-color: oklch(27.7% 0.046 192.524);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-text-shadow-color: color-mix(in oklab, var(--color-teal-950) var(--tw-text-shadow-alpha), transparent);
+    }
+  }
   .group-hover\:visible {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1109,6 +1139,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-teal-50);
+      }
+    }
+  }
+  .hover\:bg-teal-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-teal-100);
       }
     }
   }
