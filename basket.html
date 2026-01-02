@@ -315,12 +315,12 @@
       <!-- container -->
       <div class="w-full lg:w-5xl xl:w-7xl mx-auto">
         <!-- basket part -->
-        <div class="basket_content py-2.5">
+        <div class="flex flex-col-reverse basket_content py-2.5">
           <!-- product content/part right -->
           <div class="w-full h-full space-y-4 dark:text-teal-50">
-            <h2 class="text-4xl">تیشرت طرح دار،کد 001</h2>
-            <p class="text-3xl">شناسه محصول: 001</p>
-            <p class="text-2xl"><b>جنس محصول:</b> تیشرت دو نخ</p>
+            <h2 class="text-3xl">تیشرت طرح دار،کد 001</h2>
+            <p class="text-2xl">شناسه محصول: 001</p>
+            <p class="text-xl"><b>جنس محصول:</b> تیشرت دو نخ</p>
             <!-- size -->
             <div>
               <p class="text-2xl font-bold">انتخاب سایز:</p>
@@ -328,16 +328,16 @@
               <div
                 class="inline-block child:bg-teal-800 text-teal-50 child:px-1 child:py-1.5 child:rounded-lg child:border child:border-teal-900 child:mr-2 child:hover:bg-teal-50 child:hover:text-teal-950 child:transition-colors"
               >
-                <button type="submit" class="text-2xl">Large</button>
-                <button type="submit" class="text-2xl">X-Large</button>
-                <button type="submit" class="text-2xl">2X-Large</button>
+                <button type="submit" class="text-xl">Large</button>
+                <button type="submit" class="text-xl">X-Large</button>
+                <button type="submit" class="text-xl">2X-Large</button>
               </div>
             </div>
             <!-- color -->
             <div>
               <p class="text-2xl font-bold">انتخاب رنگ:</p>
               <div
-                class="flex items-center gap-x-6 child:text-2xl child:bg-teal-800 child:text-teal-50 child:px-1.5 child:py-1 child:rounded-lg child:border child:border-teal-900 child:hover:bg-teal-50 child:hover:text-teal-950 child:transition-colors"
+                class="flex flex-wrap items-center gap-5 child:text-xl child:bg-teal-800 child:text-teal-50 child:px-1.5 child:py-1 child:rounded-lg child:border child:border-teal-900 child:hover:bg-teal-50 child:hover:text-teal-950 child:transition-colors"
               >
                 <button type="submit">سبز</button>
                 <button type="submit">سفید</button>
@@ -346,12 +346,12 @@
                 <button type="submit">صورتی</button>
               </div>
             </div>
-            <p class="text-2xl">
+            <p class="text-xl">
               <span><b>2 </b></span>عدد از این محصول باقی مانده است.
             </p>
             <!-- off products part -->
             <div>
-              <div class="flex items-center gap-x-2.5">
+              <div class="flex flex-col items-start gap-2.5">
                 <a
                   href="#"
                   class="bg-teal-800 px-1 py-1.5 rounded-lg text-teal-50 text-xl"
@@ -365,7 +365,7 @@
               </div>
             </div>
             <!-- pardkht part -->
-            <div class="flex items-center gap-x-3">
+            <div class="flex flex-col items-center gap-x-3">
               <!-- number of products -->
               <div class="child:text-2xl">
                 <span>تعداد:</span>
@@ -379,34 +379,39 @@
                   oninput="updatePrice()"
                 />
               </div>
-              <span class="text-2xl">قیمت:</span>
-              <!-- off percent icon -->
-              <span
-                class="flex items-center justify-center gap-x-1 text-xl font-bold text-teal-50 bg-red-500 rounded-lg px-1 py-0.5"
-              >
-                <svg class="w-5 h-5 fill-teal-50">
-                  <use href="#off-percent"></use>
-                </svg>
-                0
-              </span>
-              <p class="text-2xl font-bold">
-                <span id="product_price">750,000</span>
-                تومان
-              </p>
+              <div class="flex gap-x-1.5">
+                <span class="text-2xl">قیمت:</span>
+                <!-- off percent icon -->
+                <span
+                  class="flex items-center justify-center gap-x-1 text-xl font-bold text-teal-50 bg-red-500 rounded-lg px-1 py-0.5"
+                >
+                  <svg class="w-5 h-5 fill-teal-50">
+                    <use href="#off-percent"></use>
+                  </svg>
+                  0
+                </span>
+                <p class="text-2xl font-bold">
+                  <span id="product_price">750,000</span>
+                  تومان
+                </p>
+              </div>
 
               <!-- buy button -->
             </div>
 
-            <div class="flex items-center gap-x-2.5 text-2xl">
-              <svg
+            <div class="flex flex-col items-center gap-x-2.5 text-2xl">
+              <div class="flex items-center gap-x-1.5 mb-2">
+                <svg
                 class="heart_icon w-6 h-6 fill-white stroke-black cursor-pointer"
               >
                 <use href="#heart-icon"></use>
               </svg>
               <span>افزودن به لیست علاقه مندی ها</span>
+              </div>
+              
               <a
                 href="#"
-                class="text-2xl text-teal-50 font-bold bg-teal-800 px-1.5 py-1 rounded-lg hover:bg-teal-50 hover:text-teal-950 border border-teal-900 transition-colors"
+                class="text-xl text-teal-50 font-bold bg-teal-800 px-1.5 py-1 rounded-lg hover:bg-teal-50 hover:text-teal-950 border border-teal-900 transition-colors"
                 >پرداخت هزینه</a
               >
             </div>
@@ -415,7 +420,7 @@
           <div>
             <!-- main image -->
             <div
-              class="flex flex-col justify-between items-center gap-y-2.5 relative"
+              class="flex flex-col justify-between items-center gap-y-2.5 p-4 relative"
             >
               <img
                 src="./public/images/card4.png"
@@ -424,33 +429,33 @@
               />
               <!-- chevron icon for main image -->
               <svg
-                class="chevron_right w-6 h-6 text-teal-50 absolute right-[30px] top-[213px]"
+                class="chevron_right w-6 h-6 text-teal-50 absolute right-[30px] top-[145px]"
               >
                 <use href="#chevron-right"></use>
               </svg>
               <!-- sub images -->
               <div
-                class="flex flex-row justify-between items-center gap-2.5 w-full child:shadow child:rounded-lg child:border child:border-teal-950 dark:child:border-teal-500 child:bg-teal-800"
+                class="grid grid-cols-2 items-center gap-2.5 w-full child:mx-auto child:shadow child:rounded-lg child:border child:border-teal-950 dark:child:border-teal-500 child:bg-teal-800"
               >
                 <img
                   src="./public/images/card1.png"
                   alt="product image"
-                  class="w-24 h-24"
+                  class="w-32 h-32"
                 />
                 <img
                   src="./public/images/card2.png"
                   alt="product image"
-                  class="w-24 h-24"
+                  class="w-32 h-32"
                 />
                 <img
                   src="./public/images/card3.png"
                   alt="product image"
-                  class="w-24 h-24"
+                  class="w-32 h-32"
                 />
                 <img
                   src="./public/images/card5.png"
                   alt="product image"
-                  class="w-24 h-24"
+                  class="w-32 h-32"
                 />
               </div>
             </div>
@@ -755,15 +760,19 @@
           </div>
         </div>
         <!-- comment products part -->
-        <div class="mb-5 ">
+        <div class="mb-5">
           <div>
             <h2
               class="pr-2.5 text-xl font-bold md:text-4xl border-r-8 border-teal-800 dark:border-teal-500 rounded-tr-lg rounded-br-lg text-teal-800 dark:text-teal-500"
             >
               دیدگاه و نظرات
             </h2>
-            <p class="text-2xl text-teal-950 dark:text-teal-50">دیدگاه خود را بنویسید.</p>
-            <h2 class="text-xl text-teal-950 font-bold dark:text-teal-50">دیدگاه</h2>
+            <p class="text-2xl text-teal-950 dark:text-teal-50">
+              دیدگاه خود را بنویسید.
+            </p>
+            <h2 class="text-xl text-teal-950 font-bold dark:text-teal-50">
+              دیدگاه
+            </h2>
             <textarea
               class="text-xl text-teal-950 pr-2.5 py-2.5 border outline-0 resize-none rounded-lg dark:shadow"
               name=""
@@ -775,7 +784,9 @@
             <div class="flex items-center gap-x-16 mb-2.5">
               <!-- comment name  -->
               <div>
-                <label class="text-xl text-teal-950 font-bold dark:text-teal-50" for=""
+                <label
+                  class="text-xl text-teal-950 font-bold dark:text-teal-50"
+                  for=""
                   >نام</label
                 >
                 <input
@@ -786,7 +797,9 @@
               </div>
               <!-- comment email  -->
               <div>
-                <label class="text-xl text-teal-950 font-bold dark:text-teal-50" for=""
+                <label
+                  class="text-xl text-teal-950 font-bold dark:text-teal-50"
+                  for=""
                   >ایمیل</label
                 >
                 <input
@@ -797,7 +810,9 @@
               </div>
             </div>
             <!-- save name and email for comment again -->
-            <div class="text-xl text-teal-950 font-bold flex items-center gap-x-2.5 mb-3">
+            <div
+              class="text-xl text-teal-950 font-bold flex items-center gap-x-2.5 mb-3"
+            >
               <input type="checkbox" />
               <span class="dark:text-teal-50"
                 >ذخیره نام،ایمیل من در مرورگر برای زمانی که دوباره دیدگاهی

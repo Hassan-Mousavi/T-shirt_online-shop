@@ -18,8 +18,8 @@
   * {
     user-select: none;
   }
-  .basket_content {
+  /* .basket_content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-  }
+  } */
 }
