@@ -365,7 +365,7 @@
               </div>
             </div>
             <!-- pardkht part -->
-            <div class="flex flex-col items-center gap-x-3">
+            <div class="flex flex-col items-start gap-x-3">
               <!-- number of products -->
               <div class="child:text-2xl">
                 <span>تعداد:</span>
@@ -399,16 +399,16 @@
               <!-- buy button -->
             </div>
 
-            <div class="flex flex-col items-center gap-x-2.5 text-2xl">
+            <div class="flex flex-col items-start gap-x-2.5 text-2xl">
               <div class="flex items-center gap-x-1.5 mb-2">
                 <svg
-                class="heart_icon w-6 h-6 fill-white stroke-black cursor-pointer"
-              >
-                <use href="#heart-icon"></use>
-              </svg>
-              <span>افزودن به لیست علاقه مندی ها</span>
+                  class="heart_icon w-6 h-6 fill-white stroke-black cursor-pointer"
+                >
+                  <use href="#heart-icon"></use>
+                </svg>
+                <span>افزودن به لیست علاقه مندی ها</span>
               </div>
-              
+
               <a
                 href="#"
                 class="text-xl text-teal-50 font-bold bg-teal-800 px-1.5 py-1 rounded-lg hover:bg-teal-50 hover:text-teal-950 border border-teal-900 transition-colors"
@@ -425,17 +425,17 @@
               <img
                 src="./public/images/card4.png"
                 alt="product image"
-                class="main_pic shadow border border-teal-950 bg-linear-180 from-teal-950 to-teal-700 rounded-lg"
+                class="main_pic shadow border border-teal-950 bg-linear-180 md:w-2xl md:h-[400px] md:object-contain from-teal-950 to-teal-700 rounded-lg"
               />
               <!-- chevron icon for main image -->
               <svg
-                class="chevron_right w-6 h-6 text-teal-50 absolute right-[30px] top-[145px]"
+                class="chevron_right w-6 h-6 text-teal-50 absolute right-[30px] top-[145px] sm:top-[290px] md:top-52 md:right-20"
               >
                 <use href="#chevron-right"></use>
               </svg>
               <!-- sub images -->
               <div
-                class="grid grid-cols-2 items-center gap-2.5 w-full child:mx-auto child:shadow child:rounded-lg child:border child:border-teal-950 dark:child:border-teal-500 child:bg-teal-800"
+                class="grid grid-cols-2 md:grid-cols-4 items-center gap-2.5 w-full child:object-contain child:mx-auto child:shadow child:rounded-lg child:border child:border-teal-950 dark:child:border-teal-500 child:bg-teal-800"
               >
                 <img
                   src="./public/images/card1.png"
@@ -761,27 +761,27 @@
         </div>
         <!-- comment products part -->
         <div class="mb-5">
-          <div>
+          <div class="p-4">
             <h2
-              class="pr-2.5 text-xl font-bold md:text-4xl border-r-8 border-teal-800 dark:border-teal-500 rounded-tr-lg rounded-br-lg text-teal-800 dark:text-teal-500"
+              class="pr-2.5 text-2xl font-bold md:text-4xl border-r-8 border-teal-800 dark:border-teal-500 rounded-tr-lg rounded-br-lg text-teal-800 dark:text-teal-500"
             >
               دیدگاه و نظرات
             </h2>
-            <p class="text-2xl text-teal-950 dark:text-teal-50">
+            <p class="text-xl text-teal-950 dark:text-teal-50">
               دیدگاه خود را بنویسید.
             </p>
             <h2 class="text-xl text-teal-950 font-bold dark:text-teal-50">
               دیدگاه
             </h2>
             <textarea
-              class="text-xl text-teal-950 pr-2.5 py-2.5 border outline-0 resize-none rounded-lg dark:shadow"
+              class="text-xl text-teal-950 pr-2.5 py-2.5 w-full mx-auto border outline-0 resize-none rounded-lg dark:shadow"
               name=""
               id=""
-              cols="100"
-              rows="10"
+              cols="25"
+              rows="5"
             ></textarea>
             <!-- comment inputs -->
-            <div class="flex items-center gap-x-16 mb-2.5">
+            <div class="flex flex-col items-start gap-x-16 mb-2.5">
               <!-- comment name  -->
               <div>
                 <label
@@ -790,7 +790,7 @@
                   >نام</label
                 >
                 <input
-                  class="border-2 border-teal-800 rounded-lg w-80 text-xl pr-2.5 dark:text-teal-50"
+                  class="border-2 border-teal-800 rounded-lg w-full text-xl pr-2.5 dark:text-teal-50"
                   type="text"
                   required
                 />
@@ -803,7 +803,7 @@
                   >ایمیل</label
                 >
                 <input
-                  class="border-2 border-teal-800 rounded-lg w-80 text-xl pr-2.5 dark:text-teal-50"
+                  class="border-2 border-teal-800 rounded-lg w-full text-xl pr-2.5 dark:text-teal-50"
                   type="email"
                   required
                 />
@@ -813,7 +813,7 @@
             <div
               class="text-xl text-teal-950 font-bold flex items-center gap-x-2.5 mb-3"
             >
-              <input type="checkbox" />
+              <input type="checkbox" class="w-7 h-7" />
               <span class="dark:text-teal-50"
                 >ذخیره نام،ایمیل من در مرورگر برای زمانی که دوباره دیدگاهی
                 مینویسم.</span
