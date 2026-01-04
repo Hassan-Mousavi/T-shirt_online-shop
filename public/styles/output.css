@@ -27,7 +27,6 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-3xs: 16rem;
-    --container-2xs: 18rem;
     --container-xs: 20rem;
     --container-sm: 24rem;
     --container-2xl: 42rem;
@@ -227,9 +226,6 @@
   .relative {
     position: relative;
   }
-  .sticky {
-    position: sticky;
-  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -365,6 +361,12 @@
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
   .block {
     display: block;
   }
@@ -419,11 +421,20 @@
   .h-44 {
     height: calc(var(--spacing) * 44);
   }
+  .h-52 {
+    height: calc(var(--spacing) * 52);
+  }
+  .h-56 {
+    height: calc(var(--spacing) * 56);
+  }
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
   .h-72 {
     height: calc(var(--spacing) * 72);
+  }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
   }
   .h-\[488px\] {
     height: 488px;
@@ -470,6 +481,9 @@
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
@@ -485,17 +499,26 @@
   .w-36 {
     width: calc(var(--spacing) * 36);
   }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
   .w-52 {
     width: calc(var(--spacing) * 52);
   }
+  .w-56 {
+    width: calc(var(--spacing) * 56);
+  }
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
   .w-72 {
     width: calc(var(--spacing) * 72);
+  }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
   }
   .w-\[95\%\] {
     width: 95%;
@@ -574,6 +597,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -624,6 +650,13 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .space-y-4 {
@@ -952,6 +985,9 @@
   .text-left {
     text-align: left;
   }
+  .text-start {
+    text-align: start;
+  }
   .font-Nazanin {
     font-family: var(--font-Nazanin);
   }
@@ -986,6 +1022,30 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .leading-1 {
+    --tw-leading: calc(var(--spacing) * 1);
+    line-height: calc(var(--spacing) * 1);
+  }
+  .leading-1\.5 {
+    --tw-leading: calc(var(--spacing) * 1.5);
+    line-height: calc(var(--spacing) * 1.5);
+  }
+  .leading-3 {
+    --tw-leading: calc(var(--spacing) * 3);
+    line-height: calc(var(--spacing) * 3);
+  }
+  .leading-9 {
+    --tw-leading: calc(var(--spacing) * 9);
+    line-height: calc(var(--spacing) * 9);
+  }
+  .leading-14 {
+    --tw-leading: calc(var(--spacing) * 14);
+    line-height: calc(var(--spacing) * 14);
+  }
+  .leading-20 {
+    --tw-leading: calc(var(--spacing) * 20);
+    line-height: calc(var(--spacing) * 20);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -1170,11 +1230,6 @@
       top: 290px;
     }
   }
-  .sm\:grid {
-    @media (width >= 40rem) {
-      display: grid;
-    }
-  }
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
@@ -1271,11 +1326,6 @@
   .md\:top-52 {
     @media (width >= 48rem) {
       top: calc(var(--spacing) * 52);
-    }
-  }
-  .md\:right-20 {
-    @media (width >= 48rem) {
-      right: calc(var(--spacing) * 20);
     }
   }
   .md\:right-50 {
@@ -1458,11 +1508,6 @@
       padding: calc(var(--spacing) * 1.5);
     }
   }
-  .md\:px-2\.5 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 2.5);
-    }
-  }
   .md\:px-5 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 5);
@@ -1521,49 +1566,9 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
-  .lg\:top-48 {
-    @media (width >= 64rem) {
-      top: calc(var(--spacing) * 48);
-    }
-  }
-  .lg\:right-0 {
-    @media (width >= 64rem) {
-      right: calc(var(--spacing) * 0);
-    }
-  }
-  .lg\:right-5 {
-    @media (width >= 64rem) {
-      right: calc(var(--spacing) * 5);
-    }
-  }
   .lg\:right-16 {
     @media (width >= 64rem) {
       right: calc(var(--spacing) * 16);
-    }
-  }
-  .lg\:right-18 {
-    @media (width >= 64rem) {
-      right: calc(var(--spacing) * 18);
-    }
-  }
-  .lg\:right-20 {
-    @media (width >= 64rem) {
-      right: calc(var(--spacing) * 20);
-    }
-  }
-  .lg\:right-25 {
-    @media (width >= 64rem) {
-      right: calc(var(--spacing) * 25);
-    }
-  }
-  .lg\:right-28 {
-    @media (width >= 64rem) {
-      right: calc(var(--spacing) * 28);
-    }
-  }
-  .lg\:right-52 {
-    @media (width >= 64rem) {
-      right: calc(var(--spacing) * 52);
     }
   }
   .lg\:block {
@@ -1668,11 +1673,6 @@
   .lg\:gap-x-24 {
     @media (width >= 64rem) {
       column-gap: calc(var(--spacing) * 24);
-    }
-  }
-  .lg\:px-1\.5 {
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 1.5);
     }
   }
   .lg\:px-4 {
@@ -2052,20 +2052,6 @@
       }
     }
   }
-  .sm\:child\:mx-0 {
-    @media (width >= 40rem) {
-      & > * {
-        margin-inline: calc(var(--spacing) * 0);
-      }
-    }
-  }
-  .sm\:child\:justify-between {
-    @media (width >= 40rem) {
-      & > * {
-        justify-content: space-between;
-      }
-    }
-  }
   .xl\:child\:mx-0 {
     @media (width >= 80rem) {
       & > * {
@@ -2200,6 +2186,10 @@
   syntax: "<length-percentage>";
   inherits: false;
   initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -2377,6 +2367,7 @@
       --tw-gradient-from-position: 0%;
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
