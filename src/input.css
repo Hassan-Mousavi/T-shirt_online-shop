@@ -18,8 +18,11 @@
   * {
     user-select: none;
   }
-  /* .basket_content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  } */
+  .counter_products::after {
+    content: "hsgdhjfhgf";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    color: brown;
+  }
 }
