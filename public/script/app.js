@@ -33,15 +33,6 @@ menuOpen.addEventListener("click", function () {
   mobileMenu.classList.remove("-right-64");
 });
 // ////////////////////////////////////////////////////////////////
-// products page
-const filterBtn = document.querySelectorAll(".filter-btn");
-filterBtn.forEach((btns) => {
-  btns.addEventListener("click", function () {
-    const list = btns.nextElementSibling;
-    const chevron = btns.querySelector(".side-chevron");
+// number of products
 
-    list.classList.toggle("max-h-96");
-    chevron.classList.toggle("rotate-180");
-  });
-});
-
+const numProducts = document.querySelector(".counter_products");
