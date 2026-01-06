@@ -35,4 +35,12 @@ menuOpen.addEventListener("click", function () {
 // ////////////////////////////////////////////////////////////////
 // number of products
 
-const numProducts = document.querySelector(".counter_products");
+const counter = document.getElementById("cart_counter");
+const addToBasket = document.querySelectorAll(".add_to_basket");
+let count = 0;
+addToBasket.forEach((btns) => {
+  btns.addEventListener("click", function () {
+    count++;
+    counter.textContent = count;
+  });
+});

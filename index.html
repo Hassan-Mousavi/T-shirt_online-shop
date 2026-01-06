@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>online-shop</title>
     <link rel="stylesheet" href="./public/styles/output.css" />
-    <link rel="stylesheet" href="./src/input.css" />
   </head>
   <body class="font-Nazanin bg-zinc-50 dark:bg-slate-950">
     <!-- svgs -->
@@ -196,8 +195,12 @@
                 </svg>
               </div>
               <!-- basket icon -->
-              <a href="#" class="relative">
-                <span class="counter_products"></span>
+              <a href="#" class="relative flex items-center">
+                <span
+                id="cart_counter"
+                  class="absolute -top-5 -right-3.5 w-6 h-6 rounded-lg bg-teal-950 text-teal-50 text-center"
+                >0</span>
+
                 <svg class="w-6 h-6 text-teal-950 dark:text-teal-400">
                   <use href="#basket-icon"></use>
                 </svg>
@@ -469,7 +472,7 @@
             </p>
             <a
               href="#"
-              class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+              class="add_to_basket block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
               >افزودن به سبد خرید</a
             >
           </div>
@@ -515,7 +518,7 @@
             </p>
             <a
               href="#"
-              class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+              class="add_to_basket block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
               >افزودن به سبد خرید</a
             >
           </div>
@@ -561,7 +564,7 @@
             </p>
             <a
               href="#"
-              class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+              class="add_to_basket block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
               >افزودن به سبد خرید</a
             >
           </div>
@@ -608,7 +611,7 @@
             </p>
             <a
               href="#"
-              class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+              class="add_to_basket block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
               >افزودن به سبد خرید</a
             >
           </div>
@@ -654,7 +657,7 @@
             </p>
             <a
               href="#"
-              class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+              class="add_to_basket block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
               >افزودن به سبد خرید</a
             >
           </div>
@@ -700,7 +703,7 @@
             </p>
             <a
               href="#"
-              class="block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
+              class="add_to_basket block transition-all w-36 text-base p-2.5 md:w-full mx-auto my-0 text-center md:text-xl rounded-lg border-2 border-teal-900 dark:border-teal-700 md:py-2.5 md:px-5 bg-teal-900 dark:bg-teal-700 text-teal-50 font-bold hover:bg-teal-50 hover:text-teal-900"
               >افزودن به سبد خرید</a
             >
           </div>

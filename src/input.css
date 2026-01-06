@@ -18,18 +18,5 @@
   * {
     user-select: none;
   }
-  .counter_products::after {
-    content: "0";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: 20px;
-    right: -10px;
-    background-color: #022f2e;
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 8px;
-    box-shadow: 0 0 4px #999;
-  }
+ 
 }
