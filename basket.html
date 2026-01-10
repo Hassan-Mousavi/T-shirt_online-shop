@@ -315,152 +315,303 @@
       <!-- container -->
       <div class="w-full lg:w-5xl xl:w-7xl mx-auto">
         <!-- basket part -->
-        <div class="flex flex-col-reverse lg:flex-row basket_content py-2.5">
-          <!-- product content/part right -->
-          <div class="w-full h-full space-y-4 dark:text-teal-50">
-            <h2 class="text-3xl">تیشرت طرح دار،کد 001</h2>
-            <p class="text-2xl">شناسه محصول: 001</p>
-            <p class="text-xl"><b>جنس محصول:</b> تیشرت دو نخ</p>
-            <!-- size -->
-            <div>
-              <p class="text-2xl font-bold">انتخاب سایز:</p>
+        <div class="space-y-5">
+          <!-- total products selected -->
+          <div class="flex flex-col-reverse lg:flex-row basket_content py-2.5 ">
+            <!-- product content/part right -->
+            <div class="w-full h-full space-y-4 dark:text-teal-50">
+              <h2 class="text-3xl">تیشرت طرح دار،کد 001</h2>
+              <p class="text-2xl">شناسه محصول: 001</p>
+              <p class="text-xl"><b>جنس محصول:</b> تیشرت دو نخ</p>
+              <!-- size -->
+              <div>
+                <p class="text-2xl font-bold">انتخاب سایز:</p>
 
-              <div
-                class="inline-block child:bg-teal-800 text-teal-50 child:px-1 child:py-1.5 child:rounded-lg child:border child:border-teal-900 child:mr-2 child:hover:bg-teal-50 child:hover:text-teal-950 child:transition-colors"
-              >
-                <button type="submit" class="text-xl">Large</button>
-                <button type="submit" class="text-xl">X-Large</button>
-                <button type="submit" class="text-xl">2X-Large</button>
+                <div
+                  class="inline-block child:bg-teal-800 text-teal-50 child:px-1 child:py-1.5 child:rounded-lg child:border child:border-teal-900 child:mr-2 child:hover:bg-teal-50 child:hover:text-teal-950 child:transition-colors"
+                >
+                  <button type="submit" class="text-xl">Large</button>
+                  <button type="submit" class="text-xl">X-Large</button>
+                  <button type="submit" class="text-xl">2X-Large</button>
+                </div>
               </div>
-            </div>
-            <!-- color -->
-            <div>
-              <p class="text-2xl font-bold">انتخاب رنگ:</p>
-              <div
-                class="flex flex-wrap items-center gap-5 child:text-xl child:bg-teal-800 child:text-teal-50 child:px-1.5 child:py-1 child:rounded-lg child:border child:border-teal-900 child:hover:bg-teal-50 child:hover:text-teal-950 child:transition-colors"
-              >
-                <button type="submit">سبز</button>
-                <button type="submit">سفید</button>
-                <button type="submit">مشکی</button>
-                <button type="submit">سبز کله غازی</button>
-                <button type="submit">صورتی</button>
+              <!-- color -->
+              <div>
+                <p class="text-2xl font-bold">انتخاب رنگ:</p>
+                <div
+                  class="flex flex-wrap items-center gap-5 child:text-xl child:bg-teal-800 child:text-teal-50 child:px-1.5 child:py-1 child:rounded-lg child:border child:border-teal-900 child:hover:bg-teal-50 child:hover:text-teal-950 child:transition-colors"
+                >
+                  <button type="submit">سبز</button>
+                  <button type="submit">سفید</button>
+                  <button type="submit">مشکی</button>
+                  <button type="submit">سبز کله غازی</button>
+                  <button type="submit">صورتی</button>
+                </div>
               </div>
-            </div>
-            <p class="text-xl">
-              <span><b>2 </b></span>عدد از این محصول باقی مانده است.
-            </p>
-            <!-- off products part -->
-            <div>
-              <div class="flex flex-col items-start gap-2.5">
+              <p class="text-xl">
+                <span><b>2 </b></span>عدد از این محصول باقی مانده است.
+              </p>
+              <!-- off products part -->
+              <div>
+                <div class="flex flex-col items-start gap-2.5">
+                  <a
+                    href="#"
+                    class="bg-teal-800 px-1 py-1.5 rounded-lg text-teal-50 text-xl"
+                    >اعمال کد تخفیف:</a
+                  >
+                  <input
+                    type="text"
+                    maxlength="6"
+                    class="border pr-1.5 text-xl rounded-lg"
+                  />
+                </div>
+              </div>
+              <!-- pardkht part -->
+              <div class="flex flex-col items-start gap-x-3">
+                <!-- number of products -->
+                <div class="child:text-2xl">
+                  <span>تعداد:</span>
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="500"
+                    id="count"
+                    class="border text-center rounded-lg"
+                    oninput="updatePrice()"
+                  />
+                </div>
+                <div class="flex gap-x-1.5">
+                  <span class="text-2xl">قیمت:</span>
+                  <!-- off percent icon -->
+                  <span
+                    class="flex items-center justify-center gap-x-1 text-xl font-bold text-teal-50 bg-red-500 rounded-lg px-1 py-0.5"
+                  >
+                    <svg class="w-5 h-5 fill-teal-50">
+                      <use href="#off-percent"></use>
+                    </svg>
+                    0
+                  </span>
+                  <p class="text-2xl font-bold">
+                    <span id="product_price">750,000</span>
+                    تومان
+                  </p>
+                </div>
+
+                <!-- buy button -->
+              </div>
+
+              <div class="flex flex-col items-start gap-x-2.5 text-2xl">
+                <div class="flex items-center gap-x-1.5 mb-2">
+                  <svg
+                    class="heart_icon w-6 h-6 fill-white stroke-black cursor-pointer"
+                  >
+                    <use href="#heart-icon"></use>
+                  </svg>
+                  <span>افزودن به لیست علاقه مندی ها</span>
+                </div>
+
                 <a
                   href="#"
-                  class="bg-teal-800 px-1 py-1.5 rounded-lg text-teal-50 text-xl"
-                  >اعمال کد تخفیف:</a
+                  class="text-xl text-teal-50 font-bold bg-teal-800 px-1.5 py-1 rounded-lg hover:bg-teal-50 hover:text-teal-950 border border-teal-900 transition-colors"
+                  >پرداخت هزینه</a
                 >
-                <input
-                  type="text"
-                  maxlength="6"
-                  class="border pr-1.5 text-xl rounded-lg"
-                />
               </div>
             </div>
-            <!-- pardkht part -->
-            <div class="flex flex-col items-start gap-x-3">
-              <!-- number of products -->
-              <div class="child:text-2xl">
-                <span>تعداد:</span>
-                <input
-                  type="number"
-                  value="1"
-                  min="1"
-                  max="500"
-                  id="count"
-                  class="border text-center rounded-lg"
-                  oninput="updatePrice()"
-                />
-              </div>
-              <div class="flex gap-x-1.5">
-                <span class="text-2xl">قیمت:</span>
-                <!-- off percent icon -->
-                <span
-                  class="flex items-center justify-center gap-x-1 text-xl font-bold text-teal-50 bg-red-500 rounded-lg px-1 py-0.5"
-                >
-                  <svg class="w-5 h-5 fill-teal-50">
-                    <use href="#off-percent"></use>
-                  </svg>
-                  0
-                </span>
-                <p class="text-2xl font-bold">
-                  <span id="product_price">750,000</span>
-                  تومان
-                </p>
-              </div>
-
-              <!-- buy button -->
-            </div>
-
-            <div class="flex flex-col items-start gap-x-2.5 text-2xl">
-              <div class="flex items-center gap-x-1.5 mb-2">
-                <svg
-                  class="heart_icon w-6 h-6 fill-white stroke-black cursor-pointer"
-                >
-                  <use href="#heart-icon"></use>
-                </svg>
-                <span>افزودن به لیست علاقه مندی ها</span>
-              </div>
-
-              <a
-                href="#"
-                class="text-xl text-teal-50 font-bold bg-teal-800 px-1.5 py-1 rounded-lg hover:bg-teal-50 hover:text-teal-950 border border-teal-900 transition-colors"
-                >پرداخت هزینه</a
+            <!-- images part/part left -->
+            <div>
+              <!-- main image -->
+              <div
+                class="flex flex-col justify-between items-center gap-y-2.5 p-4 relative"
               >
+                <img
+                  src="./public/images/card4.png"
+                  alt="product image"
+                  class="main_pic shadow border border-teal-950 bg-linear-180 md:w-2xl md:h-[400px] md:object-contain from-teal-950 to-teal-700 rounded-lg"
+                />
+                <!-- chevron icon for main image -->
+                <svg
+                  class="chevron_right w-6 h-6 text-teal-50 absolute right-[30px] top-[145px] sm:top-[290px] md:top-52 md:right-50 lg:right-16"
+                >
+                  <use href="#chevron-right"></use>
+                </svg>
+                <!-- sub images -->
+                <div
+                  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center gap-2.5 w-full child:object-contain child:mx-auto child:shadow child:rounded-lg child:border child:border-teal-950 dark:child:border-teal-500 child:bg-teal-800"
+                >
+                  <img
+                    src="./public/images/card1.png"
+                    alt="product image"
+                    class="w-32 h-32"
+                  />
+                  <img
+                    src="./public/images/card2.png"
+                    alt="product image"
+                    class="w-32 h-32"
+                  />
+                  <img
+                    src="./public/images/card3.png"
+                    alt="product image"
+                    class="w-32 h-32"
+                  />
+                  <img
+                    src="./public/images/card5.png"
+                    alt="product image"
+                    class="w-32 h-32"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <!-- images part/part left -->
-          <div>
-            <!-- main image -->
-            <div
-              class="flex flex-col justify-between items-center gap-y-2.5 p-4 relative"
-            >
-              <img
-                src="./public/images/card4.png"
-                alt="product image"
-                class="main_pic shadow border border-teal-950 bg-linear-180 md:w-2xl md:h-[400px] md:object-contain from-teal-950 to-teal-700 rounded-lg"
-              />
-              <!-- chevron icon for main image -->
-              <svg
-                class="chevron_right w-6 h-6 text-teal-50 absolute right-[30px] top-[145px] sm:top-[290px] md:top-52 md:right-50 lg:right-16"
-              >
-                <use href="#chevron-right"></use>
-              </svg>
-              <!-- sub images -->
+          <div class="w-full h-0.5 bg-teal-950"></div>
+          <div class="flex flex-col-reverse lg:flex-row basket_content py-2.5 ">
+            <!-- product content/part right -->
+            <div class="w-full h-full space-y-4 dark:text-teal-50">
+              <h2 class="text-3xl">تیشرت طرح دار،کد 001</h2>
+              <p class="text-2xl">شناسه محصول: 001</p>
+              <p class="text-xl"><b>جنس محصول:</b> تیشرت دو نخ</p>
+              <!-- size -->
+              <div>
+                <p class="text-2xl font-bold">انتخاب سایز:</p>
+
+                <div
+                  class="inline-block child:bg-teal-800 text-teal-50 child:px-1 child:py-1.5 child:rounded-lg child:border child:border-teal-900 child:mr-2 child:hover:bg-teal-50 child:hover:text-teal-950 child:transition-colors"
+                >
+                  <button type="submit" class="text-xl">Large</button>
+                  <button type="submit" class="text-xl">X-Large</button>
+                  <button type="submit" class="text-xl">2X-Large</button>
+                </div>
+              </div>
+              <!-- color -->
+              <div>
+                <p class="text-2xl font-bold">انتخاب رنگ:</p>
+                <div
+                  class="flex flex-wrap items-center gap-5 child:text-xl child:bg-teal-800 child:text-teal-50 child:px-1.5 child:py-1 child:rounded-lg child:border child:border-teal-900 child:hover:bg-teal-50 child:hover:text-teal-950 child:transition-colors"
+                >
+                  <button type="submit">سبز</button>
+                  <button type="submit">سفید</button>
+                  <button type="submit">مشکی</button>
+                  <button type="submit">سبز کله غازی</button>
+                  <button type="submit">صورتی</button>
+                </div>
+              </div>
+              <p class="text-xl">
+                <span><b>2 </b></span>عدد از این محصول باقی مانده است.
+              </p>
+              <!-- off products part -->
+              <div>
+                <div class="flex flex-col items-start gap-2.5">
+                  <a
+                    href="#"
+                    class="bg-teal-800 px-1 py-1.5 rounded-lg text-teal-50 text-xl"
+                    >اعمال کد تخفیف:</a
+                  >
+                  <input
+                    type="text"
+                    maxlength="6"
+                    class="border pr-1.5 text-xl rounded-lg"
+                  />
+                </div>
+              </div>
+              <!-- pardkht part -->
+              <div class="flex flex-col items-start gap-x-3">
+                <!-- number of products -->
+                <div class="child:text-2xl">
+                  <span>تعداد:</span>
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="500"
+                    id="count"
+                    class="border text-center rounded-lg"
+                    oninput="updatePrice()"
+                  />
+                </div>
+                <div class="flex gap-x-1.5">
+                  <span class="text-2xl">قیمت:</span>
+                  <!-- off percent icon -->
+                  <span
+                    class="flex items-center justify-center gap-x-1 text-xl font-bold text-teal-50 bg-red-500 rounded-lg px-1 py-0.5"
+                  >
+                    <svg class="w-5 h-5 fill-teal-50">
+                      <use href="#off-percent"></use>
+                    </svg>
+                    0
+                  </span>
+                  <p class="text-2xl font-bold">
+                    <span id="product_price">750,000</span>
+                    تومان
+                  </p>
+                </div>
+
+                <!-- buy button -->
+              </div>
+
+              <div class="flex flex-col items-start gap-x-2.5 text-2xl">
+                <div class="flex items-center gap-x-1.5 mb-2">
+                  <svg
+                    class="heart_icon w-6 h-6 fill-white stroke-black cursor-pointer"
+                  >
+                    <use href="#heart-icon"></use>
+                  </svg>
+                  <span>افزودن به لیست علاقه مندی ها</span>
+                </div>
+
+                <a
+                  href="#"
+                  class="text-xl text-teal-50 font-bold bg-teal-800 px-1.5 py-1 rounded-lg hover:bg-teal-50 hover:text-teal-950 border border-teal-900 transition-colors"
+                  >پرداخت هزینه</a
+                >
+              </div>
+            </div>
+            <!-- images part/part left -->
+            <div>
+              <!-- main image -->
               <div
-                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center gap-2.5 w-full child:object-contain child:mx-auto child:shadow child:rounded-lg child:border child:border-teal-950 dark:child:border-teal-500 child:bg-teal-800"
+                class="flex flex-col justify-between items-center gap-y-2.5 p-4 relative"
               >
                 <img
-                  src="./public/images/card1.png"
+                  src="./public/images/card4.png"
                   alt="product image"
-                  class="w-32 h-32"
+                  class="main_pic shadow border border-teal-950 bg-linear-180 md:w-2xl md:h-[400px] md:object-contain from-teal-950 to-teal-700 rounded-lg"
                 />
-                <img
-                  src="./public/images/card2.png"
-                  alt="product image"
-                  class="w-32 h-32"
-                />
-                <img
-                  src="./public/images/card3.png"
-                  alt="product image"
-                  class="w-32 h-32"
-                />
-                <img
-                  src="./public/images/card5.png"
-                  alt="product image"
-                  class="w-32 h-32"
-                />
+                <!-- chevron icon for main image -->
+                <svg
+                  class="chevron_right w-6 h-6 text-teal-50 absolute right-[30px] top-[145px] sm:top-[290px] md:top-52 md:right-50 lg:right-16"
+                >
+                  <use href="#chevron-right"></use>
+                </svg>
+                <!-- sub images -->
+                <div
+                  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center gap-2.5 w-full child:object-contain child:mx-auto child:shadow child:rounded-lg child:border child:border-teal-950 dark:child:border-teal-500 child:bg-teal-800"
+                >
+                  <img
+                    src="./public/images/card1.png"
+                    alt="product image"
+                    class="w-32 h-32"
+                  />
+                  <img
+                    src="./public/images/card2.png"
+                    alt="product image"
+                    class="w-32 h-32"
+                  />
+                  <img
+                    src="./public/images/card3.png"
+                    alt="product image"
+                    class="w-32 h-32"
+                  />
+                  <img
+                    src="./public/images/card5.png"
+                    alt="product image"
+                    class="w-32 h-32"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         <!-- related post part -->
         <div class="mb-5">
           <div class="flex justify-between items-center mb-2.5">
