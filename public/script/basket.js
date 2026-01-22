@@ -1,8 +1,8 @@
 // basket page codes
 ////////////////////////////////////////////////////////////////////////
 // change picture of the basket picture
-const chevronRight = document.querySelector(".chevron_right");
-const mainPic = document.querySelector(".main_pic");
+const chevronRight = document.querySelectorAll(".chevron_right");
+const mainPic = document.querySelectorAll(".main_pic");
 const pictures = [
   "./public/images/card1.png",
   "./public/images/card2.png",
@@ -18,13 +18,17 @@ function nextPic() {
   }
   mainPic.src = pictures[index];
 }
-chevronRight.addEventListener("click", nextPic);
+chevronRight.forEach((btn) => {
+  btn.addEventListener("click", nextPic);
+});
 // add to favoriates part
-const heartIcon = document.querySelector(".heart_icon");
-heartIcon.addEventListener("click", function () {
-  heartIcon.classList.toggle("fill-red-500");
-  heartIcon.classList.toggle("fill-white");
-  heartIcon.classList.toggle("stroke-black");
+const heartIcon = document.querySelectorAll(".heart_icon");
+heartIcon.forEach((heartBtn) => {
+  heartBtn.addEventListener("click", function () {
+    heartIcon.classList.toggle("fill-red-500");
+    heartIcon.classList.toggle("fill-white");
+    heartIcon.classList.toggle("stroke-black");
+  });
 });
 // number of product part
 let pricePerItem = 750000;
