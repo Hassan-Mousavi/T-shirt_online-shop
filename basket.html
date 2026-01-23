@@ -316,8 +316,8 @@
       <div class="w-full lg:w-5xl xl:w-7xl mx-auto">
         <!-- basket part -->
         <div class="space-y-5">
-          <!-- total products selected -->
-          <div class="flex flex-col-reverse lg:flex-row basket_content py-2.5 ">
+          <!-- total products selected and product num 1 -->
+          <div class="flex flex-col-reverse lg:flex-row basket_content py-2.5">
             <!-- product content/part right -->
             <div class="w-full h-full space-y-4 dark:text-teal-50">
               <h2 class="text-3xl">تیشرت طرح دار،کد 001</h2>
@@ -425,6 +425,7 @@
                 class="flex flex-col justify-between items-center gap-y-2.5 p-4 relative"
               >
                 <img
+                  id="main_pic1"
                   src="./public/images/card4.png"
                   alt="product image"
                   class="main_pic shadow border border-teal-950 bg-linear-180 md:w-2xl md:h-[400px] md:object-contain from-teal-950 to-teal-700 rounded-lg"
@@ -464,7 +465,8 @@
             </div>
           </div>
           <div class="w-full h-0.5 bg-teal-950"></div>
-          <div class="flex flex-col-reverse lg:flex-row basket_content py-2.5 ">
+          <!-- product num 2 -->
+          <div class="flex flex-col-reverse lg:flex-row basket_content py-2.5">
             <!-- product content/part right -->
             <div class="w-full h-full space-y-4 dark:text-teal-50">
               <h2 class="text-3xl">تیشرت طرح دار،کد 001</h2>
@@ -572,6 +574,7 @@
                 class="flex flex-col justify-between items-center gap-y-2.5 p-4 relative"
               >
                 <img
+                  id="main_pic2"
                   src="./public/images/card4.png"
                   alt="product image"
                   class="main_pic shadow border border-teal-950 bg-linear-180 md:w-2xl md:h-[400px] md:object-contain from-teal-950 to-teal-700 rounded-lg"
@@ -610,10 +613,21 @@
               </div>
             </div>
           </div>
+          <!-- all products btn -->
+          <div class="text-center mb-5">
+            <button
+              type="button"
+              class="text-3xl text-teal-950 text-center border border-teal-900 shadow px-5 rounded-lg cursor-pointer"
+            >
+              دیدن همه محصولات
+            </button>
+          </div>
         </div>
+        <!-- final line of products -->
+        <div class="absolute right-0 left-10 w-full h-0.5 bg-teal-950"></div>
 
         <!-- related post part -->
-        <div class="mb-5">
+        <div class="my-10">
           <div class="flex justify-between items-center mb-2.5">
             <h2
               class="pr-2.5 text-xl font-bold md:text-4xl border-r-8 border-teal-800 dark:border-teal-500 rounded-tr-lg rounded-br-lg text-teal-800 dark:text-teal-500"

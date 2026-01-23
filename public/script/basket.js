@@ -2,7 +2,9 @@
 ////////////////////////////////////////////////////////////////////////
 // change picture of the basket picture
 const chevronRight = document.querySelectorAll(".chevron_right");
-const mainPic = document.querySelectorAll(".main_pic");
+const mainPic1 = document.getElementById("main_pic1");
+const mainPic2 = document.getElementById("main_pic2");
+console.log(mainPic1, mainPic2);
 const pictures = [
   "./public/images/card1.png",
   "./public/images/card2.png",
@@ -16,18 +18,19 @@ function nextPic() {
   if (index >= pictures.length) {
     index = 0;
   }
-  mainPic.src = pictures[index];
+  mainPic1.src = pictures[index];
+  mainPic2.src = pictures[index];
 }
 chevronRight.forEach((btn) => {
   btn.addEventListener("click", nextPic);
 });
 // add to favoriates part
 const heartIcon = document.querySelectorAll(".heart_icon");
-heartIcon.forEach((heartBtn) => {
-  heartBtn.addEventListener("click", function () {
-    heartIcon.classList.toggle("fill-red-500");
-    heartIcon.classList.toggle("fill-white");
-    heartIcon.classList.toggle("stroke-black");
+heartIcon.forEach((btns) => {
+  btns.addEventListener("click", function () {
+    btns.classList.toggle("fill-red-500");
+    btns.classList.toggle("fill-white");
+    btns.classList.toggle("stroke-black");
   });
 });
 // number of product part
