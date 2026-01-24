@@ -4,7 +4,7 @@
 const chevronRight = document.querySelectorAll(".chevron_right");
 const mainPic1 = document.getElementById("main_pic1");
 const mainPic2 = document.getElementById("main_pic2");
-console.log(mainPic1, mainPic2);
+const codeProducts = document.querySelectorAll(".code_product");
 const pictures = [
   "./public/images/card1.png",
   "./public/images/card2.png",
@@ -33,7 +33,7 @@ heartIcon.forEach((btns) => {
     btns.classList.toggle("stroke-black");
   });
 });
-// number of product part
+// number of product price
 let pricePerItem = 750000;
 function updatePrice() {
   let count = document.getElementById("count").value;
@@ -45,3 +45,5 @@ function updatePrice() {
   let total = count * pricePerItem;
   document.getElementById("product_price").innerText = total.toLocaleString();
 }
+// code of products
+codeProducts.forEach(i=>i.textContent++)

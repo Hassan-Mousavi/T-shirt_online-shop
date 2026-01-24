@@ -262,17 +262,11 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
-  }
   .left-6 {
     left: calc(var(--spacing) * 6);
   }
   .left-10 {
     left: calc(var(--spacing) * 10);
-  }
-  .left-20 {
-    left: calc(var(--spacing) * 20);
   }
   .z-50 {
     z-index: 50;
@@ -312,9 +306,6 @@
   }
   .my-0 {
     margin-block: calc(var(--spacing) * 0);
-  }
-  .my-5 {
-    margin-block: calc(var(--spacing) * 5);
   }
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
@@ -427,12 +418,6 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-15 {
-    height: calc(var(--spacing) * 15);
-  }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -502,12 +487,6 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
-  .w-15 {
-    width: calc(var(--spacing) * 15);
-  }
-  .w-16 {
-    width: calc(var(--spacing) * 16);
-  }
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
@@ -519,9 +498,6 @@
   }
   .w-36 {
     width: calc(var(--spacing) * 36);
-  }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
@@ -1486,16 +1462,6 @@
       column-gap: calc(var(--spacing) * 5);
     }
   }
-  .md\:gap-x-7 {
-    @media (width >= 48rem) {
-      column-gap: calc(var(--spacing) * 7);
-    }
-  }
-  .md\:gap-x-10 {
-    @media (width >= 48rem) {
-      column-gap: calc(var(--spacing) * 10);
-    }
-  }
   .md\:gap-x-12 {
     @media (width >= 48rem) {
       column-gap: calc(var(--spacing) * 12);
@@ -1743,6 +1709,22 @@
   .dark\:inline-block {
     &:where(.dark,.dark *) {
       display: inline-block;
+    }
+  }
+  .dark\:border {
+    &:where(.dark,.dark *) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .dark\:border-teal-50 {
+    &:where(.dark,.dark *) {
+      border-color: var(--color-teal-50);
+    }
+  }
+  .dark\:border-teal-400 {
+    &:where(.dark,.dark *) {
+      border-color: var(--color-teal-400);
     }
   }
   .dark\:border-teal-500 {
