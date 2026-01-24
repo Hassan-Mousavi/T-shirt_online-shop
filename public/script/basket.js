@@ -2,8 +2,8 @@
 ////////////////////////////////////////////////////////////////////////
 // change picture of the basket picture
 const chevronRight = document.querySelectorAll(".chevron_right");
-const mainPic1 = document.getElementById("main_pic1");
-const mainPic2 = document.getElementById("main_pic2");
+const mainPic = document.querySelectorAll(".main_pic");
+const subImage = document.querySelectorAll(".sub_image");
 const codeProducts = document.querySelectorAll(".code_product");
 const pictures = [
   "./public/images/card1.png",
@@ -18,11 +18,16 @@ function nextPic() {
   if (index >= pictures.length) {
     index = 0;
   }
-  mainPic1.src = pictures[index];
-  mainPic2.src = pictures[index];
+  mainPic.src = pictures[index];
 }
 chevronRight.forEach((btn) => {
   btn.addEventListener("click", nextPic);
+});
+// selection picture
+subImage.forEach(function (pic, i) {
+  pic.addEventListener("click", function () {
+    mainPic[0].src = pictures[i];
+  });
 });
 // add to favoriates part
 const heartIcon = document.querySelectorAll(".heart_icon");
@@ -46,4 +51,6 @@ function updatePrice() {
   document.getElementById("product_price").innerText = total.toLocaleString();
 }
 // code of products
-codeProducts.forEach(i=>i.textContent++)
+codeProducts.forEach(function (code, i) {
+  code.textContent = `${(i += 1)}`.padStart(3, 0);
+});
