@@ -53,7 +53,7 @@ timerDay.textContent = `${0} روز`;
 timerHour.textContent = `${0} ساعت`;
 timerMinute.textContent = `${0} دقیقه`;
 timerSecond.textContent = `${0} ثانیه`;
-let time = 10;
+let time = 10000;
 const tick = function () {
   const day = Math.floor(time / 86400);
   const hour = Math.trunc(Math.floor(time % 86400) / 3600);
@@ -66,5 +66,4 @@ const tick = function () {
   // time--;
   time === 0 ? clearInterval(tick) : time--;
 };
-
-setInterval(tick, 1000);
+setInterval(tick,1000);
